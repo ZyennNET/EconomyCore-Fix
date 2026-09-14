@@ -1,0 +1,275 @@
+# ==================== DonutSpawn Settings ====================
+# Teleport delay in seconds (set to 0 to disable)
+spawn-delay: 5
+
+# Cancel teleport if player moves during countdown
+cancel-on-move: true
+
+# Open the spawn GUI when using /spawn (if false, teleport to default spawn)
+spawn-gui: true
+
+# Default spawn point name (used when GUI is disabled or no name given)
+default-spawn: "spawn1"
+
+# Teleport to spawn on respawn (immediately sets respawn location)
+teleport-on-respawn: true
+
+# Teleport to spawn after death with a short delay (1 tick)
+teleport-on-death: true
+
+# First‑join teleport (teleports new players to a spawn)
+first-join:
+  enabled: true
+  spawn-name: "spawn1"
+
+# Join teleport (teleports all players on every join – disable if you don't want this)
+join:
+  enable: false
+  spawn-name: "spawn1"
+
+# Optional: custom sound mapping (you can change the sound names)
+Sounds:
+  teleport-cooldown: "block.note_block.pling"
+  teleport-complete: "entity.enderman.teleport"
+  teleport-cancel: "entity.villager.no"
+  no-permission: "entity.villager.no"
+  reload-success: "entity.player.levelup"
+  click-sound: "ui.button.click"
+
+# Worth lore settings (DonutWorth module)
+worth-lore:
+  format: "&7Worth: &a$%value%"
+  inject-while-cursor: true
+  skip-creative: true
+  gui-blacklist:
+    - "chest"
+    - "ender chest"
+    - "shulker"
+    - "&#444444ᴀᴜᴄᴛɪᴏɴ"
+    - "ᴀᴜᴄᴛɪᴏɴ"
+    - "Spawns"
+    - "&8sᴇʟʟ ʜɪsᴛᴏʀʏ"
+    - "&8sᴇʟʟ ᴍᴜʟᴛɪᴘʟɪᴇʀ"
+    - "sᴇʟʟ ʜɪsᴛᴏʀʏ"
+    - "sᴇʟʟ ᴍᴜʟᴛɪᴘʟɪᴇʀ"
+    - "sell history"
+    - "sell multiplier"
+    - "&#444444ᴛʀᴀɴѕᴀᴄᴛɪᴏɴѕ"
+    - "&#444444ᴄᴏɴꜰɪʀᴍ ʟɪѕᴛɪɴɢ"
+    - "&8ᴄᴏɴꜰɪʀᴍ ᴘᴜʀᴄʜᴀꜱᴇ"
+    - "ᴛʀᴀɴѕᴀᴄᴛɪᴏɴѕ"
+    - "ᴄᴏɴꜰɪʀᴍ ʟɪѕᴛɪɴɢ"
+    - "ᴄᴏɴꜰɪʀᴍ ᴘᴜʀᴄʜᴀꜱᴇ"
+    - "orders"
+    - "ᴏʀᴅᴇʀs"
+    - "homes"
+    - "ʜᴏᴍᴇѕ"
+    - "ꜱᴇᴛᴛɪɴɢꜱ"
+    - "settings"
+    - "ѕʜᴏᴘ"
+    - "shop"
+    - "stats"
+    - "profile manager"
+    - "ᴘʀᴏғɪʟᴇ ᴍᴀɴᴀɢᴇʀ"
+    - "&8ᴘʀᴏғɪʟᴇ ᴍᴀɴᴀɢᴇʀ"
+    - "ѕᴛᴀᴛѕ"
+    - "ᴄᴏɴғɪʀᴍ ᴡɪᴘᴇ"
+    - "SPAWNERS"
+    - "ᴄᴏɴꜰɪʀᴍ ѕᴇʟʟ"
+    - "ꜰɪʟᴛᴇʀ"
+
+# Profile viewer settings
+profile:
+  gui-title: "ᴘʀᴏғɪʟᴇ ᴍᴀɴᴀɢᴇʀ "
+  gui-size: 54
+  items:
+    - slot: 11
+      material: PLAYER_HEAD
+      name: "&b&l{username} Profile"
+      lore:
+        - "&fMoney: &a$ %donutcore_balance%"
+        - "&fShards: &5⭐ %donutcore_shards%"
+        - "&fPlaytime &6⌚ %donutcore_playtime%"
+      action: NONE
+    - slot: 13
+      material: NETHERITE_SWORD
+      name: "&b&l{username} PvP Stats"
+      lore:
+        - "&c🗡️ &fKills: &c%donutcore_kills%"
+        - "&6☠️ &fDeaths: &6%donutcore_deaths%"
+      action: NONE
+    - slot: 15
+      material: GRASS_BLOCK
+      name: "&b&l{username} Building Stats"
+      lore:
+        - "&fBlocks placed: %donutcore_blocks_placed%"
+        - "&fMobs killed: %donutcore_mobs_killed%"
+      action: NONE
+    - slot: 29
+      material: LIGHT_BLUE_BED
+      name: "&bʜᴏᴍᴇ #1"
+      lore:
+        - "&fClick to teleport to {username}'s home 1"
+      action: HOME
+      home-index: 1
+    - slot: 30
+      material: LIGHT_BLUE_BED
+      name: "&bʜᴏᴍᴇ #2"
+      lore:
+        - "&fClick to teleport to {username}'s home 2"
+      action: HOME
+      home-index: 2
+    - slot: 31
+      material: LIGHT_BLUE_BED
+      name: "&bʜᴏᴍᴇ #3"
+      lore:
+        - "&fClick to teleport to {username}'s home 3"
+      action: HOME
+      home-index: 3
+    - slot: 32
+      material: LIGHT_BLUE_BED
+      name: "&bʜᴏᴍᴇ #4"
+      lore:
+        - "&fClick to teleport to {username}'s home 4"
+      action: HOME
+      home-index: 4
+    - slot: 33
+      material: LIGHT_BLUE_BED
+      name: "&bʜᴏᴍᴇ #5"
+      lore:
+        - "&fClick to teleport to {username}'s home 5"
+      action: HOME
+      home-index: 5
+    - slot: 49
+      material: GRAY_BANNER
+      name: "&8ᴛᴇᴀᴍ ʜᴏᴍᴇ"
+      lore:
+        - "&fClick to teleport to their team home"
+      action: TEAM_HOME
+
+# ──────────────────────────────────────────────────────────────
+#  DonutTeam configuration 
+#  Supports & colour codes in all name/lore/title fields.
+# ──────────────────────────────────────────────────────────────
+donutteam:
+
+  # Misc
+  show-pvp-disabled-message: false
+
+  # Placeholder - value shown when player has no team
+  placeholder:
+    no-team: "N/A"
+
+  # Messages
+  messages:
+    left-team: "&7You left the team."
+    member-left: "&7%player% left the team."
+    team-deleted: "&aTeam deleted!"
+    team-disbanded: "&cYour team has been disbanded!"
+    cancelled: "&7Action cancelled."
+    name-too-short: "&cTeam name must be at least &f%min% &ccharacters."
+    name-too-long: "&cTeam name must be at most &f%max% &ccharacters."
+    name-restricted: "&cThat team name is not allowed."
+    config-reloaded: "&aTeam config reloaded."
+
+  # ── Team name rules ────────────────────────────────────────
+  name:
+    min-length: 3
+    max-length: 16
+    restricted:
+      - "admin"
+      - "staff"
+      - "owner"
+      - "mod"
+      - "donut"
+      - "server"
+
+  # ── Team GUI (main /team GUI) ──────────────────────────────
+  gui:
+    team-title: "&8ᴛᴇᴀᴍ &7(Page %page%)"
+    perms-title: "&8ᴇᴅɪᴛ ᴘᴇʀᴍɪssɪᴏɴs"
+    sort-name: "&asᴏʀᴛ"
+    prev-name: "&aʙᴀᴄᴋ"
+    prev-lore:
+      - "&fPrevious page"
+    next-name: "&aɴᴇxᴛ"
+    next-lore:
+      - "&fNext page"
+    home-name: "&aᴛᴇᴀᴍ ʜᴏᴍᴇ"
+    home-lore:
+      - "&fClick to teleport to team home"
+    search-name: "&asᴇᴀʀᴄʜ"
+    pvp-name: "&aᴘᴠᴘ"
+    refresh-name: "&aᴛᴇᴀᴍ %team%"
+
+  # ── Confirm GUI (leave / delete) ───────────────────────────
+  confirm-gui:
+    # Titles
+    leave-title: "&8ᴄᴏɴꜰɪʀᴍ ʟᴇᴀᴠᴇ"
+    delete-title: "&8ᴄᴏɴꜰɪʀᴍ ᴅɪsʙᴀɴᴅ"
+
+    # Cancel button (slot 11, red glass)
+    cancel-name: "&cᴄᴀɴᴄᴇʟ"
+    cancel-lore:
+      - "&7Click to cancel"
+
+    # Confirm leave button (slot 15, lime glass)
+    confirm-leave-name: "&aᴄᴏɴꜰɪʀᴍ ʟᴇᴀᴠᴇ"
+    confirm-leave-lore:
+      - "&7Click to leave your team"
+
+    # Confirm delete/disband button (slot 15, lime glass)
+    confirm-delete-name: "&aᴄᴏɴꜰɪʀᴍ ᴅɪsʙᴀɴᴅ"
+    confirm-delete-lore:
+      - "&7Click to disband your team"
+
+# ANNOUNCEMENT 
+
+announce:
+  title-prefix: "&d&l"
+  title-label: "announcements"
+  use-small-caps: true
+  title-times:
+    fade-in: 10    # ticks (10 = 0.5s)
+    stay: 70       # ticks (70 = 3.5s)
+    fade-out: 20   # ticks (20 = 1s)
+  sound:
+    enabled: true
+    type: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    volume: 1.0
+    pitch: 1.0
+
+discord:
+  - "&fJoin our discord: &ahttps://discord.gg/fmc"
+
+input-method: chat   # options: chat, sign
+
+# Disable a feature set to true to enable or false to disable
+
+modules:
+  spawn-system: true
+  spawners-system: true
+  toggle-system: true
+  report-system: true
+  chainmail-system: false
+  teleport-system: true
+  old-spawn-system: true
+  sell-system: true
+  team-system: true
+  chathover-system: false
+  donutworth-system: true
+  tablist-system: false
+
+  # Set any of these to false to disable that command/feature entirely.
+  # Disabling one frees up its command name so another plugin can use it
+  # instead (e.g. set media-system to false to use a different /media plugin).
+  media-system: true
+  pay-system: true
+  worth-system: true
+  home-system: true
+  warp-system: true
+  shop-system: true
+  bounty-system: true
+  duel-system: true
+  afk-system: true
+  tools-system: true

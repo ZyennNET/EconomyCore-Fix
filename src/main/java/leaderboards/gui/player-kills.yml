@@ -1,0 +1,43 @@
+title: "&8ᴛᴏᴘ ᴘᴠᴘᴇʀѕ &7(%page%/%total%)"
+rows: 6
+items:
+  player:
+    command: "stats %player%"
+    display-name: "&#04fc84%name%"
+    lore:
+    - "&7Balance: &f%value%"
+    - "&7Position: &f#%rank%"
+  self:
+    slot: 48
+    display-name: "&#04fc84ʏᴏᴜ: %name%"
+    lore:
+    - "&fRank: &#04fc84%rank%"
+    - "&fValue: &#04fc84%value%"
+  back:
+    enabled: true
+    material: "ARROW"
+    slot: 45
+    display-name: "&#04fc84« Back"
+    lore:
+    - "&7Previous page / Main menu"
+  refresh:
+    enabled: true
+    material: "ANVIL"
+    slot: 49
+    display-name: "&#04fc84Refresh"
+    lore:
+    - "&7Click to refresh this board"
+  search:
+    enabled: true
+    material: "OAK_SIGN"
+    slot: 50
+    display-name: "&#04fc84Search"
+    lore:
+    - "&7Click to search a player"
+  next:
+    enabled: true
+    material: "ARROW"
+    slot: 53
+    display-name: "&#04fc84Next »"
+    lore:
+    - "&7Next page"

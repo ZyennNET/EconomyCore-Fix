@@ -1,0 +1,111 @@
+# Cross-server RTP. When false (default), /rtp always teleports the
+# player locally on this server. When true, cross-server RTP forwarding
+# is allowed (requires your existing cross-server messaging channel).
+CROSS_SERVER_ENABLED: false
+
+blacklisted-blocks:
+  - LAVA
+  - WATER
+  - CACTUS
+  - MAGMA_BLOCK
+  - SEAPICKLE
+  - KELP
+  - SEAGRASS
+  - LILY_PAD
+  - FIRE
+  - CAMPFIRE
+  - SOUL_CAMPFIRE
+  - WITHER_ROSE
+  - VOID_AIR
+  - CAVE_AIR
+  - AIR
+
+# ================================================================
+# RTP GUI settings
+# ================================================================
+GUI:
+  # Title shown at the top of the inventory for BOTH the main menu and
+  # the overworld region sub-menu.
+  TITLE: "&8ʀᴀɴᴅᴏᴍ ᴛᴇʟᴇᴘᴏʀᴛ"
+
+  # multi  = clicking Overworld opens the region sub-menu below (Europe/East/Asia/...)
+  # single = clicking Overworld teleports immediately, same as Nether/End - no sub-menu.
+  OVERWORLD-MODE: multi
+
+  # Only used when OVERWORLD-MODE is "single" - which region to send players to.
+  OVERWORLD-DEFAULT-REGION: europe
+
+  MAIN-MENU:
+    OVERWORLD:
+      SLOT: 11
+      MATERIAL: GRASS_BLOCK
+      NAME: "&aᴏᴠᴇʀᴡᴏʀʟᴅ"
+      LORE:
+        - "&fClick to select a region"
+        - ""
+        - "&7Players (&5{PLAYERS}&7)"
+
+    NETHER:
+      SLOT: 13
+      MATERIAL: NETHERRACK
+      NAME: "&aɴᴇᴛʜᴇʀ"
+      LORE:
+        - "&fClick to randomly teleport"
+        - ""
+        - "&7Players (&5{PLAYERS}&7)"
+        - "&7Europe (&5{PING}ms&7)"
+
+    END:
+      SLOT: 15
+      MATERIAL: END_STONE
+      NAME: "&aᴇɴᴅ"
+      LORE:
+        - "&fClick to randomly teleport"
+        - ""
+        - "&7Players (&5{PLAYERS}&7)"
+        - "&7Europe (&5{PING}ms&7)"
+
+  OVERWORLD-MENU:
+    # Always shown in the sub-menu so players can never get stuck in it.
+    BACK:
+      SLOT: 22
+      MATERIAL: BARRIER
+      NAME: "&cBack"
+      LORE:
+        - "&7Return to the main menu"
+
+    # Add/remove/rename regions freely - each one just needs SLOT, MATERIAL, NAME,
+    # LORE, and REGION (the actual rtp/<region> folder it maps to).
+    REGIONS:
+      EUROPE:
+        SLOT: 10
+        MATERIAL: GRASS_BLOCK
+        NAME: "&aᴇᴜʀᴏᴘᴇ"
+        REGION: europe
+        LORE:
+          - "&fClick to randomly teleport"
+          - ""
+          - "&7Players (&5{PLAYERS}&7)"
+          - "&7Ping (&5{PING}ms&7)"
+
+      EAST:
+        SLOT: 11
+        MATERIAL: GRASS_BLOCK
+        NAME: "&aᴇᴀsᴛ"
+        REGION: east
+        LORE:
+          - "&fClick to randomly teleport"
+          - ""
+          - "&7Players (&5{PLAYERS}&7)"
+          - "&7Ping (&5{PING}ms&7)"
+
+      ASIA:
+        SLOT: 12
+        MATERIAL: GRASS_BLOCK
+        NAME: "&aᴀsɪᴀ"
+        REGION: asia
+        LORE:
+          - "&fClick to randomly teleport"
+          - ""
+          - "&7Players (&5{PLAYERS}&7)"
+          - "&7Ping (&5{PING}ms&7)"

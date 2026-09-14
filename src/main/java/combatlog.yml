@@ -1,0 +1,235 @@
+# ╔════════════════════════════════════════════════════════════════════════╗
+# ║                   CombatLog Configuration File                          ║
+# ║          Region wall, cooldowns, anti-elytra, banned potions            ║
+# ╚════════════════════════════════════════════════════════════════════════╝
+
+# Combat timer (in seconds)
+combat-duration: 10
+
+# Message shown to player in combat
+combat-message: "&7Combat: &b%time%"
+
+# Message shown when trying to use blocked commands in combat
+blocked-message: "&cYou cannot do this in combat."
+
+# Message shown when player logs out during combat
+logout-message: "&c%player% logged out during combat and died!"
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# SETTINGS
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SETTINGS:
+  # Enable radius-based death messages
+  # true = only players within CHUNKS radius see the death message
+  # false = all players see the death message
+  RADIUS: false
+
+  # Radius in chunks (1 chunk = 16 blocks)
+  # Example: CHUNKS: 5 = 80 blocks radius
+  CHUNKS: 5
+
+  # Blocks combat-tagged players from entering configured WorldGuard regions.
+  # Requires the WorldGuard plugin — if it's not installed, this section is
+  # simply ignored and the rest of CombatLog works as normal.
+  REGION-RESTRICTION:
+    # Turn the feature on/off
+    ENABLED: false
+
+    # WorldGuard region names (case-insensitive) that combat-tagged players
+    # cannot enter — e.g. your spawn/safezone regions
+    REGIONS:
+      - "safezone"
+      - "spawn"
+
+    # What happens when a tagged player tries to enter one of those regions:
+    # TELEPORT = sent back to the last safe spot they were standing on
+    # PUSHBACK = shoved back out instead of teleported
+    ACTION: "TELEPORT"
+
+    # Only used when ACTION is PUSHBACK — how hard they get shoved back
+    PUSHBACK-STRENGTH: 1.2
+
+    # Message sent to the player when they're blocked
+    MESSAGE: "&cYou cannot enter that region while in combat!"
+
+    # No pearls or elytra gliding anywhere inside these regions,
+    # regardless of whether the player is in combat.
+    NO-PEARL-IN-REGION: true
+    NO-ELYTRA-IN-REGION: true
+    NO-PEARL-MESSAGE: "&cYou cannot use ender pearls in this region!"
+    NO-ELYTRA-MESSAGE: "&cYou cannot fly with elytra in this region!"
+
+    # ── Visual barrier wall ──────────────────────────────────────────
+    # While a tagged player is within REVEAL-DISTANCE blocks of a
+    # restricted region's actual border, a solid-looking wall is shown
+    # ONLY to that player (client-side / fake blocks), tracing the full
+    # outline of the region. It disappears again once they move further
+    # away or are no longer in combat. Adjustable in-game with
+    # /combatlog reveal <blocks>.
+    BARRIER:
+      ENABLED: true
+      # Any valid material. BARRIER is invisible-but-solid looking (air w/
+      # hit-box), RED_STAINED_GLASS is the classic visible "wall" look.
+      MATERIAL: "RED_STAINED_GLASS"
+      # How tall the wall is, in blocks, anchored at the player's own feet level.
+      HEIGHT: 3
+      # How close (in blocks) a tagged player needs to be to a region's
+      # border before the wall becomes visible to them.
+      REVEAL-DISTANCE: 5
+
+  # Plain "no PvP damage inside these regions" toggle — independent of
+  # REGION-RESTRICTION above (that one is about *entering* a region while
+  # tagged, with the visible wall). This just cancels PvP damage outright
+  # inside the listed regions, e.g. your spawn/safezone, without needing to
+  # touch WorldGuard's own PVP region flag. Requires WorldGuard, same as
+  # REGION-RESTRICTION — ignored entirely if WorldGuard isn't installed.
+  REGION-PVP-DISABLE:
+    ENABLED: false
+    REGIONS:
+      - "safezone"
+      - "spawn"
+    MESSAGE: "&cPvP is disabled in this region."
+
+  # ── Ender Pearl Cooldown ─────────────────────────────────────────────
+  PEARL-COOLDOWN:
+    ENABLED: true
+    SECONDS: 15
+    # If true, cooldown only applies while the player is in combat.
+    # If false, it always applies (even completely out of combat).
+    ONLY-IN-COMBAT: true
+    MESSAGE: "&cYou must wait &e%time%s &cbefore throwing another ender pearl!"
+
+  # ── Firework Cooldown (elytra boosting) ─────────────────────────────
+  FIREWORK-COOLDOWN:
+    ENABLED: true
+    SECONDS: 5
+    ONLY-IN-COMBAT: true
+    MESSAGE: "&cYou must wait &e%time%s &cbefore using another firework!"
+
+  # ── Anti-Elytra (while in combat) ───────────────────────────────────
+  ANTI-ELYTRA:
+    ENABLED: true
+    MESSAGE: "&cYou cannot use an elytra while in combat!"
+
+  # ── Banned Potions (while in combat) ────────────────────────────────
+  BANNED-POTIONS:
+    ENABLED: true
+    MESSAGE: "&cThat potion effect is banned in combat!"
+    # PotionEffectType names (Bukkit enum names) that cannot be thrown,
+    # lingered, or drunk while a player is in combat.
+    EFFECTS:
+      - "INVISIBILITY"
+      - "SPEED"
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# MESSAGES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MESSAGES:
+  # Enable or disable custom death messages
+  ENABLED: true
+
+  # Prefix for all death messages
+  PREFIX: "&c☠ "
+
+  # Block Explosion
+  BLOCK-EXPLOSION: "{player} ɢᴏᴛ ʙʟᴏᴡɴ ᴛᴏ ᴘɪᴇᴄᴇѕ"
+
+  # Contact (prickly)
+  CONTACT: "{player} ᴡᴀѕ ᴘʀɪᴄᴋᴇᴅ ᴛᴏ ᴅᴇᴀᴛʜ"
+
+  # Drowning
+  DROWNING:
+    NORMAL: "{player} drowned!"
+    PVP: "{player} ᴅʀᴏᴡɴᴇᴅ ᴡʜɪʟѕᴛ ᴛʀʏɪɴɢ ᴛᴏ ᴇѕᴄᴀᴘᴇ {killer}"
+
+  # Entity Attack
+  ENTITY-ATTACK: "{player} ᴡᴀѕ ѕʟᴀɪɴ ʙʏ {killer}"
+
+  # Fall
+  FALL:
+    NORMAL: "{player} ʜɪᴛ ᴛʜᴇ ɢʀᴏᴜɴᴅ ᴛᴏᴏ ʜᴀʀᴅ"
+    PVP: "{player} ᴡᴀѕ ᴅᴏᴏᴍᴇᴅ ᴛᴏ ꜰᴀʟʟ ʙʏ {killer}"
+
+  # Falling Block
+  FALLING-BLOCK: "{player} ɢᴏᴛ ꜰʀᴇᴀᴋɪɴɢ ѕǫᴜᴀѕʜᴇᴅ ʙʏ ᴀ ʙʟᴏᴄᴋ"
+
+  # Fire / Fire Tick
+  FIRE:
+    NORMAL: "{player} ᴡᴇɴᴛ ᴜᴘ ɪɴ ꜰʟᴀᴍᴇѕ"
+    PVP: "{player} ᴡᴀʟᴋᴇᴅ ɪɴᴛᴏ ᴀ ꜰɪʀᴇ ᴡʜɪʟѕᴛ ꜰɪɢʜᴛɪɴɢ {killer}"
+
+  FIRE-TICK:
+    NORMAL: "{player} ʙᴜʀɴᴇᴅ ᴛᴏ ᴅᴇᴀᴛʜ"
+    PVP: "{player} ᴡᴀѕ ʙᴜʀɴᴛ ᴛᴏ ᴀ ᴄʀɪѕᴘ ᴡʜɪʟѕᴛ ꜰɪɢʜᴛɪɴɢ {killer}"
+
+  # Lava
+  LAVA:
+    NORMAL: "{player} ᴛʀɪᴇᴅ ᴛᴏ ѕᴡɪᴍ ɪɴ ʟᴀᴠᴀ"
+    PVP: "{player} ᴛʀɪᴇᴅ ᴛᴏ ѕᴡɪᴍ ɪɴ ʟᴀᴠᴀ ᴡʜɪʟᴇ ᴛʀʏɪɴɢ ᴛᴏ ᴇѕᴄᴀᴘᴇ {killer}"
+
+  # Lightning
+  LIGHTNING: "{player} ɢᴏᴛ ʟɪᴛ ᴛʜᴇ ʜᴇʟʟ ᴜᴘ ʙʏ ᴀ ʟɪɢʜᴛɴɪɴɢ"
+
+  # Poison
+  POISON: "{player} ᴡᴀѕ ᴘᴏɪѕᴏɴᴇᴅ"
+
+  # Projectile
+  PROJECTILE:
+    NORMAL: "{player} ᴡᴀѕ ѕʜᴏᴛ"
+    PVP: "{player} ᴡᴀѕ ѕʜᴏᴛ ʙʏ {killer}"
+
+  # Starvation
+  STARVATION: "{player} ѕᴛᴀʀᴠᴇᴅ ᴛᴏ ᴅᴇᴀᴛʜ"
+
+  # Suffocation
+  SUFFOCATION: "{player} ѕᴜꜰꜰᴏᴄᴀᴛᴇᴅ ɪɴ ᴀ ᴡᴀʟʟ"
+
+  # Suicide
+  SUICIDE: "{player} ᴛᴏᴏᴋ ʜɪѕ ᴏᴡɴ ʟɪꜰᴇ ʟɪᴋᴇ ᴀ ᴘᴇᴀѕᴀɴᴛ"
+
+  # Thorns
+  THORNS: "{player} ᴋɪʟʟᴇᴅ ᴛʜᴇᴍѕᴇʟꜰ ʙʏ ᴛʀʏɪɴɢ ᴛᴏ ᴋɪʟʟ ѕᴏᴍᴇᴏɴᴇ"
+
+  # Void
+  VOID:
+    NORMAL: "{player} ꜰᴇʟʟ ᴏᴜᴛ ᴏꜰ ᴛʜᴇ ᴡᴏʀʟᴅ"
+    PVP: "{player} ᴡᴀѕ ᴋɴᴏᴄᴋᴇᴅ ɪɴᴛᴏ ᴛʜᴇ ᴠᴏɪᴅ ʙʏ {killer}"
+
+  # Wither
+  WITHER: "{player} ᴡɪᴛʜᴇʀᴇᴅ ᴀᴡᴀʏ"
+
+  # Entity Explosion (TNT, creepers, etc)
+  ENTITY-EXPLOSION:
+    NORMAL: "{player} ᴡᴀѕ ʙʟᴏᴡɴ ᴜᴘ"
+    PVP: "{player} ᴡᴀѕ ʙʟᴏᴡɴ ᴜᴘ ʙʏ {killer}"
+
+  # Default (fallback for unknown causes)
+  DEFAULT: "{player} ᴅɪᴇᴅ"
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# Kill Rewards
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# Enable kill reward command execution
+enable-kill-reward: false
+
+# Command executed when a player kills another (use %killer% and %player% as placeholders)
+kill-reward-command: "eco give %killer% 100"
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# Disabled Worlds & Blocked Commands
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# Worlds where combat logging is disabled
+disabled-worlds:
+  - "disabled_world"
+  - "spawn_world"
+
+# Commands that cannot be used in combat
+blocked-commands:
+  - "spawn"
+  - "home"
+  - "tpa"
+  - "warp"

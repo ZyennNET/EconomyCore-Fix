@@ -1,0 +1,34 @@
+spawn-gui:
+  title: "&8&8ѕᴘᴀᴡɴ ᴀʀᴇᴀѕ"
+  row: 6
+  gui-settings:
+    spawn:
+      material: ITEM_FRAME
+      displayName: "&bSpawn %name%"
+      lore:
+        - "&8%current%/%max%"
+        - "&7Click to teleport to this spawn."
+    maxed-players:
+      material: REDSTONE_BLOCK
+      displayName: "&cSpawn %name%"
+      lore:
+        - "&8%current%/%max%"
+        - "&cThis spawn is full."
+    random-spawn:
+      material: LIGHT_BLUE_GLAZED_TERRACOTTA
+      slot: 49
+      displayName: "&aRandom Spawn"
+      lore:
+        - "&fClick to teleport to a random spawn."
+    back:
+      material: ARROW
+      slot: 45
+      displayName: "&aBack"
+      lore:
+        - "&fGo to the previous page."
+    next:
+      material: ARROW
+      slot: 53
+      displayName: "&aNext"
+      lore:
+        - "&fGo to the next page."

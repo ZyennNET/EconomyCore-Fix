@@ -1,0 +1,15 @@
+# ══════════════════════════════════════════════════════════════
+#  Disguise Configuration
+#  Lets a player pick a fake display name (shown in tab list & chat).
+#  Add or remove as many aliases as you'd like below.
+# ══════════════════════════════════════════════════════════════
+
+gui-title: "&8Disguise Menu"
+
+aliases:
+  shadow:
+    display-name: "&8Shadow"
+    skin-username: "Notch"
+  ghost:
+    display-name: "&7Ghost"
+    skin-username: "Technoblade"

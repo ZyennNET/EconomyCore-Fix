@@ -1,0 +1,75 @@
+title: "&8ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅѕ"
+rows: 4
+items:
+  money:
+    enabled: true
+    material: "EMERALD"
+    slot: 10
+    display-name: "&#6BF18Dᴍᴏɴᴇʏ"
+    lore:
+    - "&7View the top balances"
+    - "&7Click to view!"
+  shards:
+    enabled: true
+    material: "AMETHYST_SHARD"
+    slot: 11
+    display-name: "&#6BF18Dѕʜᴀʀᴅѕ"
+    lore:
+    - "&7View the top shard holders"
+    - "&7Click to view!"
+  shop_spent:
+    enabled: true
+    material: "GOLD_NUGGET"
+    slot: 12
+    display-name: "&#6BF18Dᴍᴏɴᴇʏ ѕᴘᴇɴᴛ"
+    lore:
+    - "&7View the top spenders"
+    - "&7Click to view!"
+  playtime:
+    enabled: true
+    material: "CLOCK"
+    slot: 13
+    display-name: "&#6BF18Dᴘʟᴀʏᴛɪᴍᴇ"
+    lore:
+    - "&7View the most active players"
+    - "&7Click to view!"
+  deaths:
+    enabled: true
+    material: "SKELETON_SKULL"
+    slot: 14
+    display-name: "&#6BF18Dᴅᴇᴀᴛʜѕ"
+    lore:
+    - "&7View the most deaths"
+    - "&7Click to view!"
+  blocks-placed:
+    enabled: true
+    material: "STONE"
+    slot: 15
+    display-name: "&#6BF18Dʙʟᴏᴄᴋѕ ᴘʟᴀᴄᴇᴅ"
+    lore:
+    - "&7View the top builders"
+    - "&7Click to view!"
+  blocks-broken:
+    enabled: true
+    material: "COBBLESTONE"
+    slot: 16
+    display-name: "&#6BF18Dʙʟᴏᴄᴋѕ ʙʀᴏᴋᴇɴ"
+    lore:
+    - "&7View the top miners"
+    - "&7Click to view!"
+  mobs-killed:
+    enabled: true
+    material: "ZOMBIE_HEAD"
+    slot: 19
+    display-name: "&#6BF18Dᴍᴏʙѕ ᴋɪʟʟᴇᴅ"
+    lore:
+    - "&7View the top mob hunters"
+    - "&7Click to view!"
+  player-kills:
+    enabled: true
+    material: "DIAMOND_SWORD"
+    slot: 20
+    display-name: "&#6BF18Dᴘʟᴀʏᴇʀ ᴋɪʟʟѕ"
+    lore:
+    - "&7View the top PvPers"
+    - "&7Click to view!"

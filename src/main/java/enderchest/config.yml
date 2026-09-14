@@ -1,0 +1,26 @@
+# EnderChest configuration
+chest-title: "ᴇɴᴅᴇʀᴄʜᴇѕᴛ"
+
+sizes:
+  normal: 27
+  vip: 54
+
+wipe-gui:
+
+  # Title of the 3-row confirmation inventory.
+  # Supports & colour codes and &#RRGGBB hex colours.
+  title: "&8ᴄᴏɴғɪʀᴍ "
+
+  # Cancel button — clicking this closes the GUI without wiping.
+  cancel:
+    slot: 11
+    material: RED_STAINED_GLASS_PANE
+    name: "&cᴄᴀɴᴄᴇʟ"
+    lore: "Click to cancel"
+
+  # Confirm button — clicking this wipes the target's ender chest.
+  confirm:
+    slot: 15
+    material: LIME_STAINED_GLASS_PANE
+    name: "&aᴄᴏɴғɪʀᴍ"
+    lore: "Click to Confirm"

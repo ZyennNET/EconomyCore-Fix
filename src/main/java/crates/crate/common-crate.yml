@@ -1,0 +1,92 @@
+key: common
+type: NORMAL
+container: CHEST
+contents:
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      display-name: '{"text":"","extra":[{"text":"ᴄᴏᴍᴍᴏɴ ʜᴇʟᴍᴇᴛ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_green"}]}'
+      enchants:
+        minecraft:protection: 1
+        minecraft:respiration: 2
+      trim:
+        material: minecraft:emerald
+        pattern: minecraft:wild
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      display-name: '{"text":"","extra":[{"text":"ᴄᴏᴍᴍᴏɴ ᴄʜᴇsᴛᴘʟᴀᴛᴇ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_green"}]}'
+      enchants:
+        minecraft:protection: 1
+      trim:
+        material: minecraft:emerald
+        pattern: minecraft:wild
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      display-name: '{"text":"","extra":[{"text":"ᴄᴏᴍᴍᴏɴ ʟᴇɢɢɪɴɢs","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_green"}]}'
+      enchants:
+        minecraft:protection: 1
+        minecraft:swift_sneak: 2
+      trim:
+        material: minecraft:emerald
+        pattern: minecraft:wild
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      display-name: '{"text":"","extra":[{"text":"ᴄᴏᴍᴍᴏɴ ʙᴏᴏᴛs","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_green"}]}'
+      enchants:
+        minecraft:depth_strider: 2
+        minecraft:feather_falling: 2
+        minecraft:protection: 1
+      trim:
+        material: minecraft:emerald
+        pattern: minecraft:wild
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"ᴄᴏᴍᴍᴏɴ sᴡᴏʀᴅ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_green"}]}'
+      enchants:
+        minecraft:looting: 2
+        minecraft:sharpness: 1
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: DIAMOND_PICKAXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"ᴄᴏᴍᴍᴏɴ ᴘɪᴄᴋᴀxᴇ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_green"}]}'
+      enchants:
+        minecraft:efficiency: 2
+        minecraft:fortune: 1
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: DIAMOND_SHOVEL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"ᴄᴏᴍᴍᴏɴ sʜᴏᴠᴇʟ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_green"}]}'
+      enchants:
+        minecraft:efficiency: 3

@@ -1,0 +1,47 @@
+# ══════════════════════════════════════════════════════════════
+#  ClearLag Configuration
+#  Periodically clears dropped items / mobs to reduce server lag.
+# ══════════════════════════════════════════════════════════════
+
+enabled: true
+
+# How often (in minutes) the clear runs.
+interval-minutes: 10
+
+# What gets cleared.
+clear-items: true
+clear-animals: false
+clear-monsters: false
+
+# Exclusions.
+exclude-named: true
+exclude-tamed: true
+exclude-villagers: true
+
+# If true, dropped spawner items (from the spawners module) are never cleared
+# no matter what, so a spawner sitting on the ground after being mined doesn't
+# get deleted before someone can pick it up. On by default.
+exclude-spawner-items: true
+
+excluded-worlds: []
+excluded-entity-types: []
+
+# Item whitelist: dropped items of these materials are NEVER cleared by
+# clear-items above, no matter what. List by material name, one per line.
+# This is checked in addition to exclude-spawner-items, so you don't need to
+# add SPAWNER here unless you've also renamed/changed how spawner items work.
+# Example:
+#   whitelisted-items:
+#     - NETHER_STAR
+#     - ELYTRA
+#     - TOTEM_OF_UNDYING
+whitelisted-items: []
+
+# Legacy key, kept for backwards compatibility — has the exact same effect as
+# whitelisted-items above and both lists are combined at runtime.
+excluded-item-materials: []
+
+# Countdown / result messages. Placeholders: {seconds}  %amountcleared%
+messages:
+  warning: "&7Entities will be removed &b{seconds} &7seconds."
+  cleared: "&7Total of &b%amountcleared% &7entities has been cleared"

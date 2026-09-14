@@ -1,0 +1,78 @@
+gui-titles:
+  sell: "&8ᴘʟᴀᴄᴇ ɪᴛᴇᴍѕ ɪɴ ʜᴇʀᴇ ᴛᴏ ѕᴇʟʟ"
+  sellmulti: "&8sᴇʟʟ ᴍᴜʟᴛɪᴘʟɪᴇʀ"
+  sellhistory: "&8sᴇʟʟ ʜɪsᴛᴏʀʏ"
+  category-history: "&8%s% ʜɪѕᴛᴏʀʏ"
+
+gui-items:
+  sort-item:
+    name: "&aѕᴏʀᴛ"
+    lore: "&7click to change"
+  prev-page:
+    name: "&aᴘʀᴇᴠɪᴏᴜѕ"
+  next-page:
+    name: "&aɴᴇxᴛ"
+  back-button:
+    name: "&cʙᴀᴄᴋ"
+
+  # Individual category icons for /sellmulti
+  category-icons:
+    crops:
+      display-name: "&aᴄʀᴏᴘs"
+      lore: "&7Click to view your &aᴄʀᴏᴘs&7 history\n&7Current multiplier: &a%multiplier%x"
+    ores:
+      display-name: "&aᴏʀᴇs"
+      lore: "&7Click to view your &aᴏʀᴇs&7 history\n&7Current multiplier: &a%multiplier%x"
+    mobs:
+      display-name: "&aᴍᴏʙ ᴅʀᴏᴘs"
+      lore: "&7Click to view your &aᴍᴏʙ ᴅʀᴏᴘs&7 history\n&7Current multiplier: &a%multiplier%x"
+    natural:
+      display-name: "&aɴᴀᴛᴜʀᴀʟ"
+      lore: "&7Click to view your &aɴᴀᴛᴜʀᴀʟ&7 history\n&7Current multiplier: &a%multiplier%x"
+    armor_and_tools:
+      display-name: "&aᴀʀᴍᴏʀ"
+      lore: "&7Click to view your &aᴀʀᴍᴏʀ&7 history\n&7Current multiplier: &a%multiplier%x"
+    fish:
+      display-name: "&aғɪsʜ"
+      lore: "&7Click to view your &aғɪsʜ&7 history\n&7Current multiplier: &a%multiplier%x"
+    book:
+      display-name: "&aᴇɴᴄʜᴀɴᴛᴍᴇɴᴛ ʙᴏᴏᴋs"
+      lore: "&7Click to view your &aᴇɴᴄʜᴀɴᴛᴍᴇɴᴛ ʙᴏᴏᴋs&7 history\n&7Current multiplier: &a%multiplier%x"
+    potions:
+      display-name: "&aᴘᴏᴛɪᴏɴs"
+      lore: "&7Click to view your &aᴘᴏᴛɪᴏɴs&7 history\n&7Current multiplier: &a%multiplier%x"
+    blocks:
+      display-name: "&aʙʟᴏᴄᴋs"
+      lore: "&7Click to view your &aʙʟᴏᴄᴋs&7 history\n&7Current multiplier: &a%multiplier%x"
+
+messages:
+  sold-total: "&a+$%amount%"
+  sold-total-action-bar: "&a+$%amount%"
+  cannot-be-sold: "&cThis item cannot be sold."
+
+settings:
+  base-multiplier: 1.0
+  multiplier-increment: 0.1
+  max-multiplier: 3.0
+
+level-prices:
+  - 25000
+  - 150000
+  - 500000
+  - 1000000
+  - 5000000
+  - 25000000
+  - 250000000
+  - 550000000
+  - 850000000
+  - 1000000000
+  - 2000000000
+  - 4000000000
+  - 8000000000
+  - 10000000000
+  - 20000000000
+  - 40000000000
+  - 80000000000
+  - 160000000000
+  - 320000000000
+  - 640000000000

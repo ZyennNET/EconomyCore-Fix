@@ -1,0 +1,125 @@
+# ============================================================
+#  Home Plugin Configuration  (plugins/DonutCore/home/config.yml)
+# ============================================================
+
+gui:
+  title: "&8ʜᴏᴍᴇѕ"
+  size: 36
+  # Slots for the set/delete dye row (bottom)
+  home-slots: [21, 22, 23, 24, 25]
+  # Slots for the teleport bed row (top)
+  bed-slots:  [12, 13, 14, 15, 16]
+
+teleport:
+  delay-seconds: 5
+
+# ── Messages ────────────────────────────────────────────────
+messages:
+  no-permission:           "&cNo permission."
+  home-not-exist:          "&cNo home set."
+  home-set:                "&aHome set!"
+  home-deleted:            "&aHome deleted!"
+  delete-cancelled:        "&7Deletion cancelled."
+  teleport-success:        "&aTeleported!"
+  teleport-cancelled-move: "&cTeleport cancelled because you moved."
+  teleporting:             "&7Teleporting in &5%seconds%s..."
+  already-teleporting:     "&cYou are already teleporting."
+  # Team home messages
+  team-home-set:           "&aTeam home set!"
+  team-home-deleted:       "&aTeam home deleted!"
+  team-home-no-team:       "&cYou are not in a team."
+  team-home-not-set:       "&cNo team home has been set."
+
+# ── Personal home items ──────────────────────────────────────
+# %number% / %home% are replaced with the home slot number (1-5)
+items:
+  has-home-bed:
+    material: LIGHT_BLUE_BED
+    name: "&bʜᴏᴍᴇ %number%"
+    lore:
+      - "&fClick to teleport to your home"
+  no-home-bed:
+    material: LIGHT_GRAY_BED
+    name: "&7ɴᴏ ʜᴏᴍᴇ ѕᴇᴛ"
+    lore:
+      - "&f- Click to create a home"
+  no-permission-bed:
+    material: RED_BED
+    name: "&cɴᴏ ᴘᴇʀᴍɪѕѕɪᴏɴ"
+    lore:
+      - "&fYou need a higher rank for this home"
+  has-home-dye:
+    material: BLUE_DYE
+    name: "&bʜᴏᴍᴇ %number%"
+    lore:
+      - "&fClick to delete this home"
+  no-home-dye:
+    material: GRAY_DYE
+    name: "&7ɴᴏ ʜᴏᴍᴇ ѕᴇᴛ"
+    lore:
+      - "&f- Click to create a home"
+  no-permission-dye:
+    material: RED_DYE
+    name: "&cɴᴏ ᴘᴇʀᴍɪѕѕɪᴏɴ"
+    lore:
+      - "&fYou need a higher rank for this home"
+
+# ── Confirm-delete GUI ───────────────────────────────────────
+confirm-delete:
+  title: "&8ᴄᴏɴꜰɪʀᴍ ᴅᴇʟᴇᴛᴇ"
+  size: 27
+  cancel-slot: 11
+  confirm-slot: 15
+  cancel-item:
+    material: RED_STAINED_GLASS_PANE
+    name: "&cCancel"
+    lore:
+      - "&fClick to cancel"
+  confirm-item:
+    material: LIME_STAINED_GLASS_PANE
+    name: "&aConfirm"
+    lore:
+      - "&fClick to delete home %number%"
+
+# ── Team home ────────────────────────────────────────────────
+team-home:
+  # Slot for the teleport banner (top row)
+  teleport-slot: 10
+  # Slot for the set/delete dye (bottom row)
+  save-slot: 19
+
+  # Banner item shown in the teleport row
+  banner:
+    no-team:
+      material: RED_BANNER
+      name: "&cTeam Home"
+      lore:
+        - "&fYou are not in a team."
+    no-home:
+      material: GRAY_BANNER
+      name: "&7Team Home"
+      lore:
+        - "&fNo team home has been set."
+    has-home:
+      material: LIGHT_BLUE_BANNER
+      name: "&bTeam Home"
+      lore:
+        - "&fClick to teleport to your team home."
+
+  # Dye item shown in the save/delete row
+  dye:
+    no-team:
+      material: RED_DYE
+      name: "&cTeam Home"
+      lore:
+        - "&fYou are not in a team."
+    no-home:
+      material: GRAY_DYE
+      name: "&7Team Home"
+      lore:
+        - "&fClick to set your team home here."
+    has-home:
+      material: LIGHT_BLUE_DYE
+      name: "&bTeam Home"
+      lore:
+        - "&fClick to delete your team home."

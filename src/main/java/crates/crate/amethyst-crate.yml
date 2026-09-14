@@ -1,0 +1,129 @@
+key: amethyst
+type: NORMAL
+container: CHEST
+contents:
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: '{"text":"","extra":[{"text":"ѕʜᴀʀᴅ ʙᴏᴏѕᴛᴇʀ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_purple"}]}'
+      lore:
+      - '{"text":"","extra":[{"text":"4x Shard Production for 24 hours","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"white"}]}'
+      - '{"text":"","extra":[{"text":"Self Destruct:","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"}]}'
+      - '{"text":"","extra":[{"text":"1d 0h 0m 0s","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"}]}'
+      PublicBukkitValues: |-
+        {
+            "economysmpcore:is-shardbooster": 1b,
+            "economysmpcore:tool-remaining": 86400L
+        }
+      potion-type: minecraft:water
+      custom-color:
+        ==: Color
+        ALPHA: 255
+        RED: 139
+        BLUE: 246
+        GREEN: 92
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: NETHERITE_PICKAXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"ᴀᴍᴇᴛʜʏѕᴛ ᴘɪᴄᴋᴀхᴇ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#860AEE"}]}'
+      lore:
+      - '{"text":"","extra":[{"text":"Breaks 9 Blocks at Once","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gray"}]}'
+      - '{"text":"","extra":[{"text":"Self Destruct: ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"}]}'
+      - '{"text":"","extra":[{"text":"3d 0h 0m 0s","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"}]}'
+      enchants:
+        minecraft:efficiency: 5
+        minecraft:mending: 1
+        minecraft:unbreaking: 3
+      PublicBukkitValues: |-
+        {
+            "economysmpcore:tool-remaining": 259200L
+        }
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: NETHERITE_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"ᴀᴍᴇᴛʜʏѕᴛ ᴀхᴇ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#860AEE"}]}'
+      lore:
+      - '{"text":"","extra":[{"text":"Breaks Trees Instantly","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gray"}]}'
+      - '{"text":"","extra":[{"text":"Self Destruct: ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"}]}'
+      - '{"text":"","extra":[{"text":"3d 0h 0m 0s","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"}]}'
+      enchants:
+        minecraft:efficiency: 5
+        minecraft:mending: 1
+        minecraft:unbreaking: 3
+      PublicBukkitValues: |-
+        {
+            "economysmpcore:tool-remaining": 259200L
+        }
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: NETHERITE_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"ᴀᴍᴇᴛʜʏѕᴛ ᴍᴜʟᴛɪᴛᴏᴏʟ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#860AEE"}]}'
+      lore:
+      - '{"text":"","extra":[{"text":"Every Tool Inside a Tool","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gray"}]}'
+      - '{"text":"","extra":[{"text":"Self Destruct: ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"}]}'
+      - '{"text":"","extra":[{"text":"3d 0h 0m 0s","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"}]}'
+      enchants:
+        minecraft:efficiency: 5
+        minecraft:mending: 1
+        minecraft:unbreaking: 3
+      PublicBukkitValues: |-
+        {
+            "economysmpcore:is-multitool": 1b,
+            "economysmpcore:tool-remaining": 259200L
+        }
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: NETHERITE_SHOVEL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"ᴀᴍᴇᴛʜʏѕᴛ ѕʜᴏᴠᴇʟ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#860AEE"}]}'
+      lore:
+      - '{"text":"","extra":[{"text":"9 Blocks Per Break","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gray"}]}'
+      - '{"text":"","extra":[{"text":"Self Destruct: ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"}]}'
+      - '{"text":"","extra":[{"text":"3d 0h 0m 0s","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"}]}'
+      enchants:
+        minecraft:efficiency: 5
+        minecraft:mending: 1
+        minecraft:unbreaking: 3
+      PublicBukkitValues: |-
+        {
+            "economysmpcore:tool-remaining": 259200L
+        }
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: BUCKET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"ᴀᴍᴇᴛʜʏѕᴛ ʙᴜᴄᴋᴇᴛ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#860AEE"}]}'
+      lore:
+      - '{"text":"","extra":[{"text":"Drains 27 Water At Once","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gray"}]}'
+      - '{"text":"","extra":[{"text":"Self Destruct:","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"}]}'
+      - '{"text":"","extra":[{"text":"3d 0h 0m 0s","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"}]}'
+      enchants:
+        minecraft:unbreaking: 3
+      ItemFlags:
+      - HIDE_ENCHANTS
+      PublicBukkitValues: |-
+        {
+            "economysmpcore:tool-remaining": 259200L
+        }

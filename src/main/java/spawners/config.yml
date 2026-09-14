@@ -1,0 +1,222 @@
+# ════════════════════════════════════════════════════════════════════════
+# DonutSpawners — Configuration
+# Place at: plugins/YourPlugin/spawners/config.yml
+# ════════════════════════════════════════════════════════════════════════
+
+ECONOMY_ENABLED: true
+DROP_TO_INVENTORY: false
+COLLECTION_RADIUS: 16
+
+# ── Anti-ESP (ProtocolLib) ────────────────────────────────────────────────
+ANTI_ESP_ENABLED: true
+ANTI_ESP_RADIUS: 16
+
+# Whether the FILTER button shows in the storage GUI
+FILTER_GUI_ENABLED: false
+
+# ── Storage GUI (54-slot) ──────────────────────────────────────────────────
+STORAGE_GUI:
+  # {STACK}, {TYPE_DISPLAY}, {PAGE}, {PAGES}
+  TITLE: "&7{STACK} {TYPE_DISPLAY} ѕᴛᴏʀᴀɢᴇ &7({PAGE}/{PAGES})"
+  PREV_BUTTON:
+    SLOT: 45
+    MATERIAL: SPECTRAL_ARROW
+    NAME: "&aBack"
+    LORE:
+      - "&fPrevious page"
+  NEXT_BUTTON:
+    SLOT: 53
+    MATERIAL: SPECTRAL_ARROW
+    NAME: "&aNext"
+    LORE:
+      - "&fNext page"
+  SELL_BUTTON:
+    SLOT: 48
+    MATERIAL: GOLD_INGOT
+    NAME: "&cѕᴇʟʟ ᴀʟʟ"
+    LORE:
+      - "&fClick to sell all mob drops!"
+  INFO_BUTTON:
+    SLOT: 49
+    MATERIAL: AUTO
+    NAME: "&#6BF18D{STACK} {TYPE_DISPLAY} ѕᴘᴀᴡɴᴇʀѕ"
+    LORE:
+      - "&#6BF18D({FILLED_PERCENT}% filled)"
+  DROP_BUTTON:
+    SLOT: 50
+    MATERIAL: DROPPER
+    NAME: "&#6BF18Dᴅʀᴏᴘ ʟᴏᴏᴛ"
+    LORE:
+      - "&fClick to drop all loot on the page"
+  FILTER_BUTTON:
+    SLOT: 46
+    MATERIAL: HOPPER
+    NAME: "&bFILTER"
+    LORE:
+      - "&fClick to manage loot filters"
+
+# ── Sell Confirm GUI (27-slot) ─────────────────────────────────────────────
+CONFIRM_SELL_GUI:
+  TITLE: "&8ᴄᴏɴꜰɪʀᴍ ѕᴇʟʟ"
+  CANCEL_BUTTON:
+    SLOT: 11
+    MATERIAL: RED_STAINED_GLASS_PANE
+    NAME: "&cᴄᴀɴᴄᴇʟ"
+    LORE:
+      - "&fClick to cancel"
+  INFO_BUTTON:
+    SLOT: 13
+    MATERIAL: PLAYER_HEAD
+    NAME: "&#6BF18Dʟᴏᴏᴛ"
+    LORE: []
+    DROPS_LINE_TEMPLATE: "&#6BF18D{AMOUNT} &f{ITEM}"
+  CONFIRM_BUTTON:
+    SLOT: 15
+    MATERIAL: LIME_STAINED_GLASS_PANE
+    NAME: "&aᴄᴏɴꜰɪʀᴍ"
+    LORE:
+      - "&fClick to sell all items"
+      - "&7({TOTAL_MONEY})"
+
+# ── Filter GUI (27-slot) ───────────────────────────────────────────────────
+FILTER_GUI:
+  TITLE: "&8FILTER"
+  BACK_BUTTON:
+    SLOT: 22
+    MATERIAL: RED_STAINED_GLASS_PANE
+    NAME: "&4BACK"
+    LORE:
+      - "&fReturn to storage"
+  ENABLED_LORE: "&a✓ Enabled (click to blacklist)"
+  BLACKLISTED_LORE: "&c✗ Blacklisted (click to enable)"
+
+# ── Spawner Item ───────────────────────────────────────────────────────────
+SPAWNER_ITEM:
+  NAME_TEMPLATE: "&dSpawner"
+  LORE:
+    - "&7Type: &e{TYPE_DISPLAY}"
+
+# ── Messages ────────────────────────────────────────────────────────────────
+MESSAGES:
+  NO_PERMISSION:           "&cYou don't have permission."
+  PLAYER_NOT_FOUND:        "&cPlayer not found."
+  INVALID_SPAWNER_ITEM:    "&cInvalid spawner item."
+  TYPE_MISMATCH:           "&cSpawner type does not match."
+  MUST_HOLD_SPAWNER:       "&cYou must hold a spawner."
+  STACKED_ONE:             "&aYou just added another spawner! Now {STACK}x in the stack."
+  BEING_VIEWED:            "&cSpawner is being viewed by another player!"
+  NO_ECONOMY:              "&cNo economy provider found."
+  NOTHING_TO_SELL:         "&eNothing to sell."
+  SOLD_ALL:                "&7You sold items for {MONEY}"
+  TRANSACTION_FAILED:      "&cTransaction failed."
+  NO_LOCATION:             "&cSpawner has no location."
+  INVALID_WORLD:           "&cInvalid world."
+  DROPPED_PAGE:            "&7Dropped current page loot."
+  NO_LOOT_PAGE:            "&cSpawner has no loot."
+  NO_XP:                   "&cNo XP to collect."
+  NO_ITEMS_OR_XP:          "&cNo items or XP to collect."
+  INVALID_TYPE:            "&cInvalid spawner type: &f{TYPE}"
+  INVALID_AMOUNT:          "&cInvalid amount. Must be between 1 and 64."
+  RECEIVED_SPAWNERS:       "&7You received &#6BF18Dx{GIVEN} {TYPE_NAME} &7spawner."
+  GAVE_SPAWNERS:           "&7Gave &#6BF18Dx{GIVEN} {TYPE_NAME} &7spawner to &#6BF18D{TARGET}"
+  CANNOT_BREAK_NO_SILK:    "&cYou cannot break spawners without Silk Touch!"
+  CONFIG_RELOADED:         "&aSpawners config reloaded."
+  SPAWNER_STACKED_ACTION:  "&aStack: {STACK}x"
+
+# ── Internal settings ────────────────────────────────────────────────────────
+settings:
+  production_interval: 600        # ticks between production cycles (600 = 30s)
+  storage_capacity: 1000000       # max stored items before 100% filled
+  isolation_radius: 5             # blocks to check for "isolated" bonus
+  require_silk_touch: true
+  natural_spawners_virtual: false
+
+MENU_AUTO_UPDATE_ENABLED: true
+MENU_AUTO_UPDATE_PERIOD: 60
+
+hopper:
+  enabled: true
+  stack_per_transfer: 5
+
+xp:
+  amount_per_cycle: 5
+
+isolated_bonus: 0.5
+
+# Per-type production multipliers
+multipliers:
+  SKELETON: 1.0
+  ZOMBIE: 1.0
+  SPIDER: 1.0
+  CREEPER: 1.0
+  ENDERMAN: 1.0
+  BLAZE: 1.0
+  WITHER_SKELETON: 1.0
+  IRON_GOLEM: 1.5
+
+# Item sell prices (per unit)
+prices:
+  BONE: 2.0
+  ARROW: 1.5
+  ROTTEN_FLESH: 1.0
+  STRING: 2.0
+  SPIDER_EYE: 2.5
+  GUNPOWDER: 3.0
+  ENDER_PEARL: 5.0
+  BLAZE_ROD: 8.0
+  GHAST_TEAR: 10.0
+  IRON_INGOT: 4.0
+  GOLD_INGOT: 6.0
+  EMERALD: 10.0
+  COAL: 1.0
+  WITHER_SKELETON_SKULL: 500.0
+  TOTEM_OF_UNDYING: 300.0
+  PRISMARINE_SHARD: 3.0
+  PRISMARINE_CRYSTALS: 5.0
+  SHULKER_SHELL: 20.0
+  TRIDENT: 50.0
+  PHANTOM_MEMBRANE: 4.0
+  SLIME_BALL: 2.0
+  MAGMA_CREAM: 3.0
+  LEATHER: 2.0
+  BEEF: 1.5
+  PORKCHOP: 1.5
+  CHICKEN: 1.5
+  FEATHER: 1.0
+  HONEYCOMB: 3.0
+  INK_SAC: 2.0
+  GLOW_INK_SAC: 4.0
+
+# ── Spawner Admin GUI (54-slot, /spawner admin) ────────────────────────────
+SPAWNER_ADMIN_GUI:
+  # {PAGE}, {PAGES}
+  TITLE: "&7sᴘᴀᴡɴᴇʀs ᴀᴅᴍɪɴ - &7(Page {PAGE}/{PAGES})"
+  PREV_BUTTON:
+    SLOT: 45
+    MATERIAL: ARROW
+    NAME: "&aBack"
+    LORE:
+      - "&fClick to go to the previous page"
+  NEXT_BUTTON:
+    SLOT: 53
+    MATERIAL: ARROW
+    NAME: "&aNext"
+    LORE:
+      - "&fClick to go to the next page"
+  REFRESH_BUTTON:
+    SLOT: 49
+    MATERIAL: ANVIL
+    NAME: "&dSpawner Admin"
+    LORE:
+      - "&fClick to refresh"
+      - "&7Total spawners: &f{TOTAL}"
+  ITEM:
+    # {TYPE_DISPLAY}, {WORLD}, {X}, {Y}, {Z}, {AMOUNT}
+    MATERIAL: SPAWNER
+    NAME: "&d{TYPE_DISPLAY} Spawner"
+    LORE:
+      - "&7World: &f{WORLD}"
+      - "&7Coords: &f{X}, {Y}, {Z}"
+      - "&7Type: &f{TYPE_DISPLAY}"
+      - "&7Amount: &f{AMOUNT}"
+      - "&8Click to teleport"

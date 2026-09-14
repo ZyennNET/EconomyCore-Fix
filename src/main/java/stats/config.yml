@@ -1,0 +1,100 @@
+stats-gui:
+  title: "&8{username} ѕᴛᴀᴛѕ"
+  size: 36
+  buttons:
+    MONEY:
+      enabled: true
+      display-name: "&#6BF18Dᴍᴏɴᴇʏ"
+      material: "EMERALD"
+      slot: 10
+      placeholder: "%donutcore_balance%"
+      lore:
+      - "&7{value}"
+    SHARDS:
+      enabled: true
+      display-name: "&#6BF18Dѕʜᴀʀᴅѕ"
+      material: "AMETHYST_SHARD"
+      slot: 11
+      placeholder: "%donutcore_shards%"
+      lore:
+      - "&7{value}"
+    KILLS:
+      enabled: true
+      display-name: "&#6BF18Dᴋɪʟʟѕ"
+      material: "DIAMOND_SWORD"
+      slot: 12
+      placeholder: "%donutcore_kills%"
+      lore:
+      - "&7{value}"
+    DEATHS:
+      enabled: true
+      display-name: "&#6BF18Dᴅᴇᴀᴛʜѕ"
+      material: "SKELETON_SKULL"
+      slot: 13
+      placeholder: "%donutcore_deaths%"
+      lore:
+      - "&7{value}"
+    PLAYTIME:
+      enabled: true
+      display-name: "&#6BF18Dᴘʟᴀʏᴛɪᴍᴇ"
+      material: "CLOCK"
+      slot: 14
+      placeholder: "%donutcore_playtime%"
+      lore:
+      - "&7{value}"
+    BLOCKS_PLACED:
+      enabled: true
+      display-name: "&#6BF18Dʙʟᴏᴄᴋѕ ᴘʟᴀᴄᴇᴅ"
+      material: "STONE"
+      slot: 15
+      placeholder: "%donutcore_blocks_placed%"
+      lore:
+      - "&7{value}"
+    BLOCKS_BROKEN:
+      enabled: true
+      display-name: "&#6BF18Dʙʟᴏᴄᴋѕ ʙʀᴏᴋᴇɴ"
+      material: "COBBLESTONE"
+      slot: 16
+      placeholder: "%donutcore_blocks_break%"
+      lore:
+      - "&7{value}"
+    MOBS_KILLED:
+      enabled: true
+      display-name: "&#6BF18Dᴍᴏʙѕ ᴋɪʟʟᴇᴅ"
+      material: "ZOMBIE_HEAD"
+      slot: 19
+      placeholder: "%donutcore_mobs_killed%"
+      lore:
+      - "&7{value}"
+    KILL_STREAK:
+      enabled: false
+      display-name: "&#6BF18Dᴋɪʟʟ ѕᴛʀᴇᴀᴋ"
+      material: "DIAMOND_AXE"
+      slot: 22
+      placeholder: "%donutcore_kill_streak%"
+      lore:
+      - "&7{value}"
+    HIGHEST_KILL_STREAK:
+      enabled: false
+      display-name: "&#6BF18Dʜɪɢʜᴇѕᴛ ᴋɪʟʟ ѕᴛʀᴇᴀᴋ"
+      material: "NETHERITE_SWORD"
+      slot: 21
+      placeholder: "%donutcore_highest_streak%"
+      lore:
+      - "&7{value}"
+    MONEY_SPENT:
+      enabled: true
+      display-name: "&#6BF18Dᴍᴏɴᴇʏ ѕᴘᴇɴᴛ"
+      material: "GOLD_NUGGET"
+      slot: 20
+      placeholder: "%donutcore_shop_spent%"
+      lore:
+      - "&7{value}"
+    MONEY_MADE:
+      enabled: false
+      display-name: "&#6BF18Dᴍᴏɴᴇʏ ᴍᴀᴅᴇ"
+      material: "IRON_NUGGET"
+      slot: 23
+      placeholder: "%donutcore_money_made%"
+      lore:
+      - "&7{value}"

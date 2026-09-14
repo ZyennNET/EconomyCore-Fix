@@ -1,0 +1,363 @@
+gui-title: "&8ꜱᴇᴛᴛɪɴɢꜱ"
+gui-size: 36
+
+settings:
+  - enabled: true
+    slot: 1
+    material: OAK_SIGN
+    name: "&3ᴘᴜʙʟɪᴄ ᴄʜᴀᴛ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: "chat toggle"
+    command-off: "chat toggle"
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: true
+    slot: 2
+    material: DARK_OAK_SIGN
+    name: "&3ᴘʀɪᴠᴀᴛᴇ ᴍᴇꜱꜱᴀɢᴇꜱ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: "msgtoggle"
+    command-off: "msgtoggle"
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: true
+    slot: 3
+    material: WARPED_SIGN
+    name: "&3ᴄʜᴀᴛ ꜱᴇʀᴠᴇʀ ᴍᴇꜱꜱᴀɢᴇꜱ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: ""
+    command-off: ""
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: false
+    slot: 4
+    material: CRIMSON_SIGN
+    name: "&3ʜᴏᴛʙᴀʀ ꜱᴇʀᴠᴇʀ ᴍᴇꜱꜱᴀɢᴇꜱ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: ""
+    command-off: ""
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: false
+    slot: 5
+    material: CHERRY_SIGN
+    name: "&3ᴘᴀʏ ᴀʟᴇʀᴛꜱ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: ""
+    command-off: ""
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: false
+    slot: 6
+    material: BAMBOO_SIGN
+    name: "&3ʙᴏᴜɴᴛʏ ᴀʟᴇʀᴛꜱ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: ""
+    command-off: ""
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: false
+    slot: 7
+    material: ACACIA_SIGN
+    name: "&3ᴀᴜᴄᴛɪᴏɴ ᴀʟᴇʀᴛꜱ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: ""
+    command-off: ""
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: true
+    slot: 10
+    material: END_CRYSTAL
+    name: "&3ꜰᴀꜱᴛ ᴄʀʏꜱᴛᴀʟꜱ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: ""
+    command-off: ""
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: false
+    slot: 11
+    material: TOTEM_OF_UNDYING
+    name: "&3ᴛᴏᴛᴇᴍ ᴘᴀʀᴛɪᴄʟᴇꜱ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: ""
+    command-off: ""
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: false
+    slot: 12
+    material: TNT
+    name: "&3ᴇxᴘʟᴏꜱɪᴏɴ ᴘᴀʀᴛɪᴄʟᴇꜱ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: ""
+    command-off: ""
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: false
+    slot: 13
+    material: GOAT_HORN
+    name: "&3ᴇxᴘʟᴏꜱɪᴏɴ ꜱᴏᴜɴᴅꜱ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: ""
+    command-off: ""
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: false
+    slot: 14
+    material: GOLD_INGOT
+    name: "&3Qᴜᴄɪᴋ ᴀᴜᴄᴛɪᴏɴ ʙᴜʏ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: ""
+    command-off: ""
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: true
+    slot: 15
+    material: CHAINMAIL_HELMET
+    name: "&3ᴄʜᴀɪɴᴍᴀɪʟ ᴏɴ ʀᴇꜱᴘᴀᴡɴ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: ""
+    command-off: ""
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: true
+    slot: 16
+    material: ZOMBIE_HEAD
+    name: "&3ᴅɪꜱᴀʙʟᴇ ᴍᴏʙ ꜱᴘᴀᴡɴꜱ"
+    lore-on: ["&fCurrently: &2&lON", "&7Hostile mobs cannot spawn", "&7and are cleared near players."]
+    lore-off: ["&fCurrently: &4&lOFF", "&7Hostile mobs spawn normally."]
+    initial-state: false
+    command-on: "mobtoggle"
+    command-off: "mobtoggle"
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: false
+    slot: 19
+    material: PLAYER_HEAD
+    name: "&3ᴘʟᴀʏᴇʀ ᴠɪꜱɪʙʟɪᴛʏ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: ""
+    command-off: ""
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: true
+    slot: 20
+    material: LECTERN
+    name: "&3ꜱᴄᴏʀᴇʙᴏᴀʀᴅ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: "sb toggle"
+    command-off: "sb toggle"
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: false
+    slot: 21
+    material: FEATHER
+    name: "&3ᴛᴘᴀ ᴄᴏɴꜰɪʀᴍ ᴍᴇɴᴜꜱ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: "tpaguitoggle"
+    command-off: "tpaguitoggle"
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: false
+    slot: 22
+    material: MUSIC_DISC_RELIC
+    name: "&3ꜱᴏᴜɴᴅ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: ""
+    command-off: ""
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: false
+    slot: 23
+    material: MAP
+    name: "&3ᴏʀᴅᴇʀ ɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴꜱ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: ""
+    command-off: ""
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: false
+    slot: 24
+    material: NETHERITE_INGOT
+    name: "&3ʀᴀɴᴅᴏᴍ ᴄᴏᴏʀᴅꜱ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: ""
+    command-off: ""
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: false
+    slot: 28
+    material: DIAMOND_SWORD
+    name: "&3ᴅᴜᴇʟ ʀᴇqᴜᴇꜱᴛꜱ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: ""
+    command-off: ""
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: true
+    slot: 25
+    material: END_CRYSTAL
+    name: "&3ꜰᴀꜱᴛ ᴄʀʏꜱᴛᴀʟ"
+    lore-on: ["&fCurrently: &2&lON", "&7Crystals auto-explode", "&7right after placing."]
+    lore-off: ["&fCurrently: &4&lOFF", "&7Crystals behave normally."]
+    initial-state: false
+    command-on: "fc"
+    command-off: "fc"
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: true
+    slot: 29
+    material: ENDER_PEARL
+    name: "&3ᴛᴘᴀ ʀᴇqᴜᴇꜱᴛꜱ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: "tpatoggle"
+    command-off: "tpatoggle"
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: true
+    slot: 30
+    material: ENDER_EYE
+    name: "&3ᴛᴘᴀ ʜᴇʀᴇ ʀᴇqᴜᴇꜱᴛꜱ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: "tpaheretoggle"
+    command-off: "tpaheretoggle"
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: false
+    slot: 31
+    material: SHIELD
+    name: "&3ᴛᴇᴀᴍ ɪɴᴠɪᴛᴇꜱ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: ""
+    command-off: ""
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: false
+    slot: 32
+    material: EMERALD
+    name: "&3ᴘᴀʏᴍᴇɴᴛꜱ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: ""
+    command-off: ""
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: false
+    slot: 33
+    material: BELL
+    name: "&3ᴛᴇᴀᴍ ᴄʜᴀᴛ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: "team chat"
+    command-off: "team chat"
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: true
+    slot: 34
+    material: LIME_CANDLE
+    name: "&3ᴡᴏʀᴛʜ ᴅɪꜱᴘʟᴀʏ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: "worthtoggle"
+    command-off: "worthtoggle"
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: false
+    slot: 35
+    material: NOTE_BLOCK
+    name: "&3ᴀꜰᴛᴇʀ ᴅᴜᴇʟ ꜱᴏɴɢꜱ"
+    lore-on: ["&fCurrently: &2&lON"]
+    lore-off: ["&fCurrently: &4&lOFF"]
+    initial-state: true
+    command-on: ""
+    command-off: ""
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"
+
+  - enabled: true
+    slot: 36
+    material: PHANTOM_MEMBRANE
+    name: "&3ᴘʜᴀɴᴛᴏᴍ ꜱᴘᴀᴡɴɪɴɢ"
+    lore-on: ["&fCurrently: &2&lON", "&7Phantoms cannot spawn and", "&7are cleared near players."]
+    lore-off: ["&fCurrently: &4&lOFF", "&7Phantoms spawn normally."]
+    initial-state: false
+    command-on: "phantom"
+    command-off: "phantom"
+    run-as: "player"
+    click-sound: "BLOCK_LEVER_CLICK"

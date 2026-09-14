@@ -1,0 +1,14 @@
+# DonutCore Warps Configuration
+# Use /setwarp <name> to create a warp at your current location.
+# Use /delwarp <name> to remove a warp.
+# Use /warp <name> to teleport (with a 5-second countdown).
+
+warps:
+  # Example warp (uncomment to use):
+  # spawn:
+  #   world: world
+  #   x: 0.0
+  #   y: 64.0
+  #   z: 0.0
+  #   yaw: 0.0
+  #   pitch: 0.0

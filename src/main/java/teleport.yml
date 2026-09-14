@@ -1,0 +1,84 @@
+# TeleportPlugin Configuration
+
+# Teleport settings
+teleport:
+  countdown: 5
+  request-timeout: 60
+  movement-threshold: 0.5
+  # How many chunks (in each direction) around the destination get
+  # pre-loaded asynchronously before the teleport actually happens.
+  # This is what stops the "timed out" disconnects on teleport into
+  # busy/farm chunks. Higher = smoother but more chunk-load work upfront.
+  preload-radius: 3
+
+# Sounds
+sounds:
+  error: "ENTITY_VILLAGER_NO"
+  success: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  teleport-start: "ENTITY_ENDERMAN_TELEPORT"
+  teleport-complete: "ENTITY_ENDERMAN_TELEPORT"
+  gui-click: "BLOCK_DISPENSER_FAIL"
+
+# Messages
+messages:
+  player-not-found: "&cThis user is not online."
+  user-disabled-tpa: "&#FB5454User disabled tpa requests."
+  user-disabled-tpahere: "&#FB5454User disabled tpahere requests."
+  on-cooldown: "&#FB5454You cannot do this right now, on cooldown."
+  request-not-exist: "&#FB5454This teleport request does not exist."
+  request-sent-tpa: "&#A8A8A8You sent &#37BFF8%player% &#A8A8A8a teleport request. &#FB5454This teleport request might be a tp trap."
+  request-sent-tpahere: "&#A8A8A8You sent &#37BFF8%player% &#A8A8A8a tpahere"
+  request-received-tpa: "&#37BFF8%player% &#A8A8A8sent you a tpa request."
+  request-received-tpahere: "&#37BFF8%player% &#A8A8A8sent you a tpahere request."
+  request-accepted: "&#37BFF8%player% &#A8A8A8accepted this tpa"
+  self-accepted: "&#A8A8A8You accepted this tpa"
+  request-denied: "&#A8A8A8You have denied &#37BFF8%player%'s &#A8A8A8tpa request."
+  request-denied-notify: "&#37BFF8%player% &#A8A8A8denied your tpa request."
+  teleport-cancelled-moved: "&#FB5454Teleport cancelled because you moved."
+  teleporting-countdown: "&#A8A8A8Teleporting in &#37BFF8%seconds% &#A8A8A8seconds"
+  teleport-preparing: "&#A8A8A8Loading destination..."
+  teleport-complete: "&#A8A8A8You teleported"
+  # %playername% = who sent the request, %teleporttype% = "tpa" or "tpahere"
+  # %tpabutton% = clickable [CLICK HERE] that opens the accept menu
+  # This is a list — add as many lines as you want
+  tp-trap-warning:
+    - "&#00A4FB%playername% &7sent you a %teleporttype% request"
+    - "&#00A4FB%tpabutton% &7or type &#00A4FB/tpaccept %playername%"
+  # Controls what the %tpabutton% looks like and its hover tooltip
+  tpabutton-label: "&#00A4FB[CLICK HERE]"
+  tpabutton-hover: "&7Click to accept"
+  click-to-accept: "&#00A4FB[CLICK TO ACCEPT] &7or type &#00A4FB/tpaccept %player%"
+  tpauto-enabled: "&aTP Auto-accept enabled - all requests will be automatically accepted."
+  tpauto-disabled: "&cTP Auto-accept disabled."
+  auto-accepted: "&aAuto-accepted &f%player%&a's teleport request."
+  auto-accepted-notify: "&aYour teleport request was auto-accepted by &f%player%&a."
+  tpa-enabled: "&aTPA requests are now enabled."
+  tpa-disabled: "&cTPA requests are now disabled."
+  tpahere-enabled: "&aTPAHere requests are now enabled."
+  tpahere-disabled: "&cTPAHere requests are now disabled."
+
+# GUI Titles
+gui:
+  confirm-request: "ᴄᴏɴꜰɪʀᴍ ʀᴇqᴜᴇꜱᴛ"
+  # Separate accept titles so the receiver knows exactly what they are accepting
+  accept-request-tpa: "ᴀᴄᴄᴇᴘᴛ ᴛᴘᴀ"
+  accept-request-tpahere: "ᴀᴄᴄᴇᴘᴛ ᴛᴘᴀʜᴇʀᴇ"
+  # Confirm button lore — tells the receiver what will physically happen
+  accept-lore-tpa: "&7Accept - &#00A4FBthey teleport to me"
+  accept-lore-tpahere: "&7Accept - &#00A4FBI teleport to them"
+  deny-name: "&#FC0000ᴅᴇɴʏ"
+  deny-lore: "&7Click to decline"
+  confirm-name: "&#00FC00ᴀᴄᴄᴇᴘᴛ"
+
+# World display names
+worlds:
+  spawn: "&7Spawn 1"
+  world: "&7Overworld"
+  arena_rtpportal: "&7Overworld"
+  world_nether: "&7Nether"
+  world_the_end: "&7End"
+  afk: "&7Afk Area 1"
+  arena_plains: "&7Plains Area"
+  arena_badlands: "&7Badlands Area"
+  arena_flat: "&7Flat Area"
+  arena_desert: "&7Desert Area"

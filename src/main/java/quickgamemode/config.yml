@@ -1,0 +1,53 @@
+# ══════════════════════════════════════════════════════════════
+#  Quick Gamemode Commands (/gmc, /gms, /gma, /gmspec)
+#  Colors support both "&" codes and hex colors written directly
+#  in front of text, e.g. "#00A6FFYOU".
+#
+#  Reload with /donutreload after making changes — no restart needed.
+#
+#  NOTE: /gmsp is a separate, unrelated feature (staff "Silent
+#  Spectator" vanish tool) and is NOT controlled by this file.
+# ══════════════════════════════════════════════════════════════
+
+# How the "gamemode changed" message is delivered: "actionbar" or "chat".
+display: actionbar
+
+# Shown when a player sets their gamemode. %mode% is replaced with the
+# mode's display-name below. Per-mode "message" overrides this if set.
+default-message: "&7You set your gamemode to &a%mode%&7 mode."
+
+# Shown if a player runs the command for the mode they're already in.
+already-in-mode: "&7You are already in &a%mode%&7 mode."
+
+# Shown when a player lacks the permission for that mode (or it's disabled).
+no-permission: "&cYou do not have permission to do that."
+disabled: "&cThat gamemode command is currently disabled."
+
+modes:
+  creative:
+    enabled: true
+    permission: economysmpcore.gamemode.creative
+    display-name: "Creative"
+    # message: "&7You set your gamemode to &a%mode%&7 mode."
+  survival:
+    enabled: true
+    permission: economysmpcore.gamemode.survival
+    display-name: "Survival"
+  adventure:
+    enabled: true
+    permission: economysmpcore.gamemode.adventure
+    display-name: "Adventure"
+  spectator:
+    enabled: true
+    permission: economysmpcore.gamemode.spectator
+    display-name: "Spectator"
+
+# Sound played on a successful gamemode change. Set "enabled" to false to
+# turn sounds off entirely. "sound" must be a valid Bukkit Sound enum name
+# (e.g. UI_BUTTON_CLICK). volume/pitch are both 0.0-2.0.
+sounds:
+  enabled: true
+  on-change:
+    sound: UI_BUTTON_CLICK
+    volume: 1.0
+    pitch: 1.0

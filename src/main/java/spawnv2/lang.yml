@@ -1,0 +1,60 @@
+# DonutSpawn language configuration for blitzr.
+
+prefix-enable: true
+prefix: ""
+
+messages:
+  teleport-started: "&fTeleport in &b%count% &fseconds"
+  teleport-cancelled: "&cTeleport cancelled."
+  teleport-completed: "&aYou have been teleported to spawn %name%."
+  already-teleporting: "&cYou are already teleporting."
+  spawn-full: "&cThis spawn is already full."
+  no-spawns: "&cNo spawns have been set yet."
+  all-full: "&cAll spawns are currently full."
+  setspawn-success: "&aSpawn %name% has been saved with %max% max players."
+  delspawn-success: "&aSpawn %name% has been deleted."
+  reload-success: "&aConfiguration reloaded."
+  invalid-number: "&cPlease provide a valid number for max players."
+  invalid-max: "&cMax players must be at least 1 or -1 for unlimited."
+  no-permission: "&cYou do not have permission to do that."
+  player-only: "&cOnly players can use this command."
+  spawn-not-found: "&cSpawn not found."
+  afk-teleport-started: "&fTeleport to AFK area in &b%count% &fseconds"
+  afk-teleport-cancelled: "&cAFK teleport cancelled."
+  afk-teleport-completed: "&aYou have been teleported to AFK area %name%."
+  afk-full: "&cThis AFK area is already full."
+  no-afk-areas: "&cNo AFK areas have been set yet."
+  all-afk-full: "&cAll AFK areas are currently full."
+  setafk-success: "&aAFK area %name% has been saved with %max% max players."
+  delafk-success: "&aAFK area %name% has been deleted."
+  afk-not-found: "&cAFK area not found."
+  already-in-afk: "&cYou are already in an AFK area."
+  afk-usage: "&cUsage: /delafk <name>"
+
+action-bars:
+  teleport-started: "&fTeleport in &b%count% &fseconds"
+  teleport-cancelled: "&cTeleport cancelled."
+  teleport-completed: "&aTeleported to spawn %name%."
+  already-teleporting: "&cYou are already teleporting."
+  reload-success: "&aConfiguration reloaded."
+  spawn-full: "&cThis spawn is already full."
+  afk-teleport-started: "&fTeleport to AFK area in &b%count% &fseconds"
+  afk-teleport-cancelled: "&cAFK teleport cancelled."
+  afk-teleport-completed: "&aTeleported to AFK area %name%."
+  afk-full: "&cThis AFK area is already full."
+  already-teleporting-afk: "&cYou are already teleporting to an AFK area."
+
+command-usage: |
+  &#00A0FC&lSPAWN
+  &#00A0FC➤ &f/spawn <name>
+  &#00A0FC➤ &f/afk <name>
+  &#00A0FC➤ &f/spawns
+  &#00A0FC➤ &f/afks
+
+command-usage-admin: |
+  &#00A0FC&lSPAWN Admin
+  &#00A0FC➤ &f/setspawn <name> <players>
+  &#00A0FC➤ &f/delspawn <name>
+  &#00A0FC➤ &f/setafk <name> <players>
+  &#00A0FC➤ &f/delafk <name>
+  &#00A0FC➤ &f/spawnreload

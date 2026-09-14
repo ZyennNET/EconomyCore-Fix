@@ -1,0 +1,13 @@
+# Global enable/disable (admin toggle)
+global-enabled: false
+
+# Messages (supports & colour codes)
+messages:
+  prefix: ""
+  kit-given: "&aYou received your respawn kit!"
+  player-toggled-on: "&aChainmail on respawn Enabled"
+  player-toggled-off: "&cChainmail on respawn Disabled"
+  admin-toggled-on: "&aChainmail on respawn Enabled."
+  admin-toggled-off: "&cChainmail on respawn disabled."
+  reloaded: "&aChainmail config reloaded."
+  no-permission: "&cYou don't have permission."

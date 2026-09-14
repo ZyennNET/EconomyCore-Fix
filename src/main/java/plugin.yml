@@ -1,0 +1,686 @@
+name: EconomySMPCore
+version: '60'
+main: com.h2ph.PrismSurvival
+api-version: '1.21'
+author: MrNaruto
+folia-supported: true
+description: Advanced all‑in‑one Minecraft core plugin
+depend: [Vault, packetevents]
+softdepend: [PlaceholderAPI, WorldEdit, FastAsyncWorldEdit, LuckPerms]
+
+commands:
+  shop:
+    description: Open the shop GUI
+    usage: /<command>
+  shards:
+    description: Admin command to manage player shards
+    usage: /<command> <give|set|remove> <player> <amount>
+  sb:
+    description: Scoreboard management command
+    usage: /sb <reload|clear|toggle>
+    permission: economysmpcore.scoreboard
+    aliases: [scoreboard, sbm]
+  billford:
+    description: Open the Billford trade GUI
+    usage: /billford [admin]
+    permission: donut.billford
+  report:
+    description: Report a player for wrongdoing
+    usage: /report <player> <reason|number>
+    permission: economysmpcore.report.use
+  reportadmin:
+    description: Reload the report configuration
+    usage: /reportadmin reload
+    permission: economysmpcore.report.admin
+  rules:
+    description: View the server rules
+    usage: /rules
+  help:
+    description: Open the Server Info GUI
+    usage: /help
+    aliases: [info]
+  media:
+    description: View media rank requirements
+    usage: /media
+  advisor:
+    description: View or edit the advisor book
+    usage: /advisor [admin]
+  setspawn:
+    description: Set a spawn point
+    usage: /setspawn <name> [maxPlayers]
+    permission: economysmpcore.admin.setspawn
+  delspawn:
+    description: Delete a spawn point
+    usage: /delspawn <name>
+    permission: spawn.admin
+  spawns:
+    description: Open the spawn selection GUI
+    usage: /spawns
+    permission: spawn.use
+  spawnreload:
+    description: Reload spawn configuration
+    usage: /spawnreload
+    permission: spawn.admin
+  spawn:
+    description: Teleport to a spawn point
+    usage: /spawn [name]
+  economy:
+    description: Manage player balances
+    usage: /economy <give|set|remove> <player> <amount>
+  baltop:
+    description: View the top balances
+    usage: /baltop
+  balance:
+    description: View player balance
+    usage: /balance [player]
+    aliases: [bal]
+  pay:
+    description: Pay money to another player
+    usage: /pay <player> <amount>
+  setafk:
+    description: Manage AFK regions
+    usage: /setafk <confirm|delete> <region_name>
+    permission: economysmpcore.admin.afk
+  update:
+    description: Create a server update book
+    usage: /update
+    permission: donut.update
+  afk:
+    description: Open the AFK areas GUI
+    usage: /afk
+  rtp:
+    description: Open the Random Teleport GUI
+    usage: /rtp
+  offend:
+    description: Ban a player with a reason
+    permission: donut.admin.offend
+    usage: /offend <player> <reason> [duration]
+  unban:
+    description: Unban a player
+    permission: donut.admin.unban
+    usage: /unban <player>
+  checkban:
+    description: Check ban status of a player
+    permission: donut.admin.checkban
+    usage: /checkban <player/ID>
+  crate:
+    description: Manage crates
+    permission: donut.crates.admin
+    usage: /crate <create|edit|get> ...
+  key:
+    description: Manage crate keys
+    permission: economysmpcore.admin.key
+    usage: /key <give|set|remove|reset> <player> <key> [amount]
+  keyall:
+    description: Give crate keys to all online players
+    permission: economysmpcore.admin.key
+    usage: /keyall <keyname> [amount]
+  sus:
+    description: Monitor suspicious activity
+    permission: economysmpcore.admin.sus
+    usage: /sus
+  gmsp:
+    description: Silent spectator mode
+    permission: economysmpcore.admin.spectator
+    usage: /gmsp
+  duel:
+    description: Manage duel regions and settings
+    usage: /duel <player|create|settings|setspawn>
+    permission: economysmpcore.duel.use
+    aliases: [duels]
+  donutreload:
+    description: Reload all plugin configurations
+    permission: economysmpcore.admin.reload
+    aliases: [preload, prismreload, economysmpreload]
+    usage: /donutreload
+  tools:
+    description: Manage survival tools
+    usage: /tools give <player> <tool>
+    permission: donut.admin.tools
+  ah:
+    description: Open the auction house
+    usage: /ah <search>
+  auction:
+    description: Admin commands for the auction system
+    usage: /auction <reload>
+    permission: donut.admin.auction
+  bounty:
+    description: Manage or view bounties
+    usage: /bounty [add <player> <amount> | <player>]
+    aliases: [bounties]
+  maintenance:
+    description: Toggle maintenance mode
+    usage: /maintenance
+    permission: economysmpcore.maintenance
+  tpa:
+    description: Request to teleport to a player
+    usage: /tpa <player>
+  tpahere:
+    description: Request to teleport a player to you
+    usage: /tpahere <player>
+  tpaccept:
+    description: Accept a teleport request
+    usage: /tpaccept [player]
+  tpacancel:
+    description: Cancel your sent teleport requests
+    usage: /tpacancel <player>
+  tpatoggle:
+    description: Toggle incoming TPA requests
+    usage: /tpatoggle
+  tpaheretoggle:
+    description: Toggle incoming TPAHere requests
+    usage: /tpaheretoggle
+  tpauto:
+    description: Toggle auto‑accept of teleport requests
+    usage: /tpauto
+  home:
+    description: Teleport to your homes
+    usage: /home [number]
+    aliases: [homes]
+  sell:
+    description: Sell items from your inventory
+    usage: /sell
+  sellhistory:
+    description: View your sell history
+    usage: /sellhistory
+    permission: economysmpcore.sell.history
+  sellmulti:
+    description: Open the sell multiplier GUI
+    usage: /sellmulti
+    permission: economysmpcore.sell.multi
+  order:
+    description: Open the orders GUI
+    usage: /order
+  prismorder:
+    description: Admin orders command
+    usage: /prismorder <subcommand>
+    permission: prismorder.admin
+  warp:
+    description: Teleport to a warp point
+    usage: /warp <name>
+  setwarp:
+    description: Create a warp point at your location
+    usage: /setwarp <name>
+    permission: economysmpcore.warp.admin
+  delwarp:
+    description: Delete a warp point
+    usage: /delwarp <name>
+    permission: economysmpcore.warp.admin
+  combatlog:
+    description: CombatLog management
+    usage: /combatlog <deathmsg|reload>
+  combatlogreload:
+    description: Reload CombatLog configuration
+    usage: /combatlogreload
+    permission: economysmpcore.combatlog.reload
+  echest:
+    description: Open your ender chest (or another player's)
+    usage: /echest [player]
+  nightvision:
+    description: Toggle night vision
+    usage: /nightvision
+    aliases: [nv]
+  donutchathover:
+    description: Reload ChatHover configuration
+    usage: /donutchathover reload
+    permission: economysmpcore.chathover.reload
+  settings:
+    description: Open the settings GUI
+    usage: /settings
+    aliases: [settingsreload]
+  spawner:
+    description: Give, remove, or view all tracked spawners
+    usage: /spawner <give|remove|admin>
+  chat:
+    description: Toggle public chat visibility
+    usage: /chat toggle
+  msg:
+    description: Send a private message
+    usage: /msg <player> <message>
+    aliases: [message, whisper, tell, dm, w]
+  reply:
+    description: Reply to the last person who messaged you
+    usage: /reply <message>
+    aliases: [r]
+  block:
+    description: Block a player from messaging you
+    usage: /block <player>
+    aliases: [ignore]
+  unblock:
+    description: Unblock a player
+    usage: /unblock <player>
+    aliases: [unignore]
+  msgtoggle:
+    description: Toggle private messages on/off
+    usage: /msgtoggle
+  reloadspawnconfig:
+    description: Reload the spawn configuration (cooldown)
+    usage: /reloadspawnconfig
+    permission: donutspawn.reloadconfig
+  reloadspawnmessages:
+    description: Reload the messages.yml file
+    usage: /reloadspawnmessages
+    permission: donutspawn.reloadmessages
+  chainmail:
+    description: Toggle your respawn kit or manage kit globally
+    usage: /chainmail [admin reload|toggle]
+    permission: economysmpcore.chainmail.use
+  totemparticle:
+    description: Toggle totem of undying particles
+    usage: /totemparticle on/off
+  explosionparticle:
+    description: Toggle explosion particles
+    usage: /explosionparticle on/off
+  dueltoggle:
+    description: Toggle incoming duel requests
+    usage: /dueltoggle on/off
+  mobtoggle:
+    description: Toggle server-wide hostile mob spawning on/off (saves state)
+    usage: /mobtoggle
+  phantom:
+    description: Toggle server-wide phantom spawning on/off (saves state)
+    usage: /phantom
+  paymenttoggle:
+    description: Toggle incoming payments
+    usage: /paymenttoggle on/off
+  team:
+    description: Team management command
+    usage: /team [create|invite|accept|decline|kick|leave|delete|info|list|sethome|home]
+  spawnstash:
+    description: Place a hidden spawner trap to catch xray cheaters
+    usage: /spawnstash
+    permission: economysmpcore.spawnstash.admin
+  lb:
+    description: Open the leaderboards GUI
+    usage: /lb [reload]
+    permission: economysmpcore.leaderboards.use
+  leaderboard:
+    description: Open the leaderboards GUI
+    usage: /leaderboard [reload]
+    permission: economysmpcore.leaderboards.use
+  leaderboards:
+    description: Open the leaderboards GUI
+    usage: /leaderboards [reload]
+    permission: economysmpcore.leaderboards.use
+  stats:
+    description: View your or another player's stats GUI
+    usage: /stats [player] or /donutstats reload
+    permission: economysmpcore.stats.use
+  wipe:
+    description: Wipe a player's stats (alias for /stats wipe)
+    usage: /wipe <player>
+    permission: economysmpcore.stats.wipe
+  clearlag:
+    description: Manually clear entities, or reload the ClearLag config
+    usage: /clearlag [reload]
+    permission: economysmpcore.clearlag.admin
+  disguise:
+    description: Open the disguise alias picker menu
+    usage: /disguise
+    permission: economysmpcore.disguise.use
+  undisguise:
+    description: Remove your current disguise
+    usage: /undisguise
+    permission: economysmpcore.disguise.use
+  endersee:
+    description: View another player's ender chest (staff)
+    usage: /endersee <player>
+    permission: economysmpcore.enderchest.see
+  invsee:
+    description: View/edit another online player's inventory (staff)
+    usage: /invsee <player>
+    permission: economysmpcore.invsee.use
+  worthtoggle:
+    description: Toggle item worth lore display (resets on rejoin)
+    usage: /worthtoggle
+    permission: economysmpcore.worth.toggle
+
+  # New commands
+  announce:
+    description: Send an announcement title to all players
+    usage: /announce <message> [repeat <number>]
+    permission: economysmpcore.announce
+  anvil:
+    description: Open an anvil GUI
+    usage: /anvil
+    permission: economysmpcore.anvil
+  checktotem:
+    description: Remove totem from another player's offhand
+    usage: /checktotem <player>
+    permission: economysmpcore.checktotem
+  craftingtable:
+    description: Open a crafting table GUI
+    usage: /craftingtable
+    permission: economysmpcore.craftingtable
+  discord:
+    description: Show Discord invite
+    usage: /discord
+  fly:
+    description: Toggle flight (enhanced with world checks)
+    usage: /fly
+    permission: economysmpcore.fly
+  gmc:
+    description: Set your own gamemode to Creative (fully configurable, see quickgamemode/config.yml)
+    usage: /gmc
+    # No command-level "permission:" here on purpose — it's checked manually in
+    # QuickGameMode against quickgamemode/config.yml so the configurable
+    # no-permission message actually shows instead of Bukkit's generic one.
+  gms:
+    description: Set your own gamemode to Survival (fully configurable, see quickgamemode/config.yml)
+    usage: /gms
+  gma:
+    description: Set your own gamemode to Adventure (fully configurable, see quickgamemode/config.yml)
+    usage: /gma
+  gmspec:
+    description: Set your own gamemode to Spectator (fully configurable, see quickgamemode/config.yml)
+    usage: /gmspec
+  hidename:
+    description: Hide your gamertag
+    usage: /hidename
+    permission: economysmpcore.hidename
+  smithingtable:
+    description: Open a smithing table GUI
+    usage: /smithingtable
+    permission: economysmpcore.smithingtable
+  whereami:
+    description: Show your or another player's current dimension
+    usage: /whereami [player]
+    permission: economysmpcore.whereami
+  tab:
+    description: Manage TAB list settings
+    usage: /tab <reload|refresh|rankings|setranking|toggle|info>
+    permission: economysmpcore.tab.admin
+
+  # Missing command from DonutStatsManager
+  donutstats:
+    description: View your or another player's stats GUI (alias)
+    usage: /donutstats [player] or /donutstats reload
+    permission: economysmpcore.stats.use
+
+  # Mute system (DonutCore)
+  mute:
+    description: Mute a player's chat or voice
+    usage: /mute <chat|voice|list> [player] [duration] [reason]
+    permission: economysmpcore.mute
+  unmute:
+    description: Unmute a player's chat or voice
+    usage: /unmute <chat|voice> <player>
+    permission: economysmpcore.unmute
+  ipmute:
+    description: IP-mute a player or IP address
+    usage: /ipmute <chat|voice|remove|list> <player|ip> [duration] [reason]
+    permission: economysmpcore.ipmute
+
+  # Worth command (item price browser)
+  worth:
+    description: View item prices
+    usage: /worth
+    permission: economysmpcore.worth
+
+  # Profile viewer command (staff)
+  profile:
+    description: View a player's profile
+    usage: /profile <player>
+    permission: economysmpcore.profile.view
+
+permissions:
+  economysmpcore.admin.shards:
+    description: Allows administration of player shards
+    default: op
+  economysmpcore.admin.shop:
+    description: Allows administration of the shop
+    default: op
+  economysmpcore.admin.economy:
+    description: Allows administration of player balances
+    default: op
+  economysmpcore.admin.reload:
+    description: Allows using /donutreload to reload all plugin configurations
+    default: op
+  economysmpcore.admin.antixray:
+    description: Permission to use the /antixray admin command
+    default: op
+  economysmpcore.admin.billford:
+    description: Permission to use /billford admin
+    default: op
+  economysmpcore.admin.advisor:
+    description: Permission to use /advisor admin
+    default: op
+  economysmpcore.admin.setspawn:
+    description: Permission to use /setspawn
+    default: op
+  economysmpcore.admin.sus:
+    description: Permission to use /sus
+    default: op
+  economysmpcore.admin.spectator:
+    description: Permission to use /gmsp (silent spectator mode)
+    default: op
+  donut.spawn:
+    description: Permission to use /spawn
+    default: true
+  economysmpcore.admin.afk:
+    description: Allows administration of AFK regions
+    default: op
+  economysmpcore.admin.duel:
+    description: Allows administration of duels
+    default: op
+  economysmpcore.duel.use:
+    description: Allows use of duel requests
+    default: true
+  economysmpcore.home.1:
+    description: Allows home slot 1
+    default: true
+  economysmpcore.home.2:
+    description: Allows home slot 2
+    default: true
+  economysmpcore.home.3:
+    description: Allows home slot 3
+    default: op
+  economysmpcore.home.4:
+    description: Allows home slot 4
+    default: op
+  economysmpcore.home.5:
+    description: Allows home slot 5
+    default: op
+  economysmpcore.home.instant:
+    description: Teleport instantly without countdown
+    default: op
+  prismorder.admin:
+    description: Admin access to orders system
+    default: op
+  economysmpcore.warp.admin:
+    description: Allows setting, deleting, and reloading warps
+    default: op
+  economysmpcore.combatlog.reload:
+    description: Allows reloading CombatLog config
+    default: op
+  economysmpcore.enderchest.use:
+    description: Allows using /echest
+    default: true
+  economysmpcore.enderchest.vip:
+    description: Get larger ender chest size
+    default: false
+  economysmpcore.enderchest.admin:
+    description: Allows viewing other players' ender chests
+    default: op
+  economysmpcore.enderchest.see:
+    description: Allows staff to view any player's ender chest with /endersee
+    default: op
+  economysmpcore.invsee.use:
+    description: Allows staff to view/edit another online player's inventory with /invsee
+    default: op
+  economysmpcore.worth.toggle:
+    description: Allows toggling item worth lore
+    default: true
+  economysmpcore.worth:
+    description: Allows using /worth
+    default: true
+  economysmpcore.chathover.reload:
+    description: Allows reloading ChatHover config
+    default: op
+  economysmpcore.settings.reload:
+    description: Allows reloading the settings config
+    default: op
+  donutspawn.reloadconfig:
+    description: Allows reloading spawn config
+    default: op
+  donutspawn.reloadmessages:
+    description: Allows reloading messages
+    default: op
+  donutspawn.bypass:
+    description: Bypass the teleport cooldown
+    default: op
+  donutspawn.setspawn:
+    description: Allows setting the spawn location
+    default: op
+  economysmpcore.report.use:
+    description: Allows using /report
+    default: true
+  economysmpcore.report.admin:
+    description: Allows /reportadmin reload
+    default: op
+  economysmpcore.chainmail.use:
+    description: Allows toggling personal respawn kit
+    default: true
+  economysmpcore.chainmail.admin:
+    description: Allows global toggle and reload
+    default: op
+  economysmpcore.spawners.admin:
+    description: Allows using /givespawner and /spawner give
+    default: op
+  economysmpcore.spawners.remove:
+    description: Allows using /spawner remove
+    default: op
+  economysmpcore.spawners.adminmenu:
+    description: Allows using /spawner admin
+    default: op
+  economysmpcore.phantom.toggle:
+    description: Allows toggling global phantom spawning with /phantom
+    default: op
+  economysmpcore.mobtoggle.toggle:
+    description: Allows toggling global hostile mob spawning with /mobtoggle
+    default: op
+  economysmpcore.stats.wipe:
+    description: Allows using /stats wipe and /wipe
+    default: op
+  economysmpcore.clearlag.admin:
+    description: Allows using /clearlag to manually clear entities or reload
+    default: op
+  economysmpcore.disguise.use:
+    description: Allows using /disguise and /undisguise
+    default: true
+  spawn.admin:
+    description: Allows managing spawn points and reloading
+    default: op
+  spawn.use:
+    description: Allows using spawn GUI
+    default: true
+  spawn.bypass:
+    description: Bypass teleport delay
+    default: op
+  donutteam.use:
+    description: Allows using /team commands
+    default: true
+  economysmpcore.spawnstash.admin:
+    description: Allows using /spawnstash
+    default: op
+  economysmpcore.leaderboards.use:
+    description: Allows using /lb, /leaderboard, /leaderboards
+    default: true
+  economysmpcore.leaderboards.admin:
+    description: Allows reloading the leaderboards module
+    default: op
+  economysmpcore.stats.use:
+    description: Allows using /stats
+    default: true
+  economysmpcore.stats.reload:
+    description: Allows reloading stats config
+    default: op
+  economysmpcore.admin.key:
+    description: Allows administration of crate keys (used by /key and /keyall)
+    default: op
+  economysmpcore.commandwhitelist.bypass:
+    description: Bypass the command whitelist and see/use all commands
+    default: op
+
+  # New permissions
+  economysmpcore.announce:
+    description: Allow using /announce
+    default: op
+  economysmpcore.anvil:
+    description: Allow using /anvil
+    default: true
+  economysmpcore.checktotem:
+    description: Allow using /checktotem
+    default: op
+  economysmpcore.craftingtable:
+    description: Allow using /craftingtable
+    default: true
+  economysmpcore.fly:
+    description: Allow using /fly
+    default: op
+  economysmpcore.gamemode.creative:
+    description: Allow /gmc
+    default: op
+  economysmpcore.gamemode.survival:
+    description: Allow /gms
+    default: op
+  economysmpcore.gamemode.adventure:
+    description: Allow /gma
+    default: op
+  economysmpcore.gamemode.spectator:
+    description: Allow /gmspec
+    default: op
+  economysmpcore.hidename:
+    description: Allow hiding own name
+    default: true
+  economysmpcore.hidename.see:
+    description: See hidden names
+    default: op
+  economysmpcore.smithingtable:
+    description: Allow using /smithingtable
+    default: true
+  economysmpcore.whereami:
+    description: Allow using /whereami
+    default: true
+  economysmpcore.tab.admin:
+    description: Manage TAB list
+    default: op
+
+  # Sell system permissions
+  economysmpcore.sell.history:
+    description: Allow using /sellhistory
+    default: true
+  economysmpcore.sell.multi:
+    description: Allow using /sellmulti
+    default: true
+
+  # Mute system permissions
+  economysmpcore.mute:
+    description: Allows using /mute
+    default: op
+  economysmpcore.chatmute:
+    description: Allows muting player chat
+    default: op
+  economysmpcore.voicemute:
+    description: Allows muting player voice
+    default: op
+  economysmpcore.unmute:
+    description: Allows using /unmute
+    default: op
+  economysmpcore.chatunmute:
+    description: Allows unmuting player chat
+    default: op
+  economysmpcore.voiceunmute:
+    description: Allows unmuting player voice
+    default: op
+  economysmpcore.ipmute:
+    description: Allows using /ipmute
+    default: op
+
+  # Profile viewer permission
+  economysmpcore.profile.view:
+    description: Allows viewing player profiles
+    default: op
+  economysmpcore.profile.admin:
+    description: Allows reloading profile config
+    default: op

@@ -1,0 +1,16 @@
+mysql:
+  enabled: false
+  host: "localhost"
+  port: 3306
+  database: "prismcore"
+  username: "root"
+  password: "password"
+  ssl: false
+  pool:
+    maximum-pool-size: 10
+
+redis:
+  enabled: false
+  host: "localhost"
+  port: 6379
+  password: ""

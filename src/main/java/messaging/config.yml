@@ -1,0 +1,32 @@
+# ══════════════════════════════════════════════════════════════
+#  Private Messaging Configuration (/msg, /reply, /block, etc.)
+#  Colors support both "&" codes and hex colors written directly
+#  in front of text, e.g. "#00A6FFYOU".
+# ══════════════════════════════════════════════════════════════
+
+msg:
+  format-to-sender: "#00A6FFYOU #A4ABB7-> #00A6FF%target%: #FFFFFF%message%"
+  format-to-target: "#00A6FF%sender% #A4ABB7-> #00A6FFYOU: #FFFFFF%message%"
+  player-not-found: "#FF5555That player is not online."
+  self-message: "#FF5555You can't message yourself."
+  no-reply-target: "#FF5555You have no one to reply to."
+  usage-msg: "#FF5555Usage: /msg <player> <message>"
+  usage-reply: "#FF5555Usage: /r <message>"
+  messages-disabled: "#FF5555This user has private messages disabled."
+  you-blocked-them: "#FF5555You have this player blocked."
+  they-blocked-you: "#FF5555You cannot message this player."
+  target-offline: "#FF5555That player is no longer online."
+
+# Sounds played when sending/receiving a private message. Set "enabled" to
+# false to disable sounds entirely. "sound" must be a valid Bukkit Sound enum
+# name (e.g. UI_BUTTON_CLICK). volume/pitch are both 0.0-2.0.
+sounds:
+  enabled: true
+  message-sent:
+    sound: UI_BUTTON_CLICK
+    volume: 1.0
+    pitch: 1.0
+  message-received:
+    sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 1.0
+    pitch: 1.0

@@ -1,0 +1,18 @@
+TAB:
+  ENABLED: true
+  MAX_COLUMNS: 4
+  MAX_ROWS: 20
+  GROUP_SORTING:
+    ENABLED: true
+    RANKINGS:
+      default: 1
+  TITLE:
+    header:
+      - ""
+      - "&#007CF9&lExample&#00C6F9&lSMP"
+      - "&f%online% players"
+      - ""
+    footer:
+      - ""
+      - "&#00C6F9/ᴅɪsᴄᴏʀᴅ.    /sᴛᴏʀᴇ.    /ɢᴜɪᴅᴇ"
+      - ""

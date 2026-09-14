@@ -1,0 +1,115 @@
+key: crimson
+type: NORMAL
+container: CHEST
+contents:
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: NETHERITE_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      display-name: '{"text":"","extra":[{"text":"ᴄʀɪᴍsᴏɴ ʜᴇʟᴍᴇᴛ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_red"}]}'
+      enchants:
+        minecraft:mending: 1
+        minecraft:protection: 4
+        minecraft:respiration: 3
+        minecraft:thorns: 3
+        minecraft:unbreaking: 3
+      trim:
+        material: minecraft:redstone
+        pattern: minecraft:snout
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: NETHERITE_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      display-name: '{"text":"","extra":[{"text":"ᴄʀɪᴍsᴏɴ ᴄʜᴇsᴛᴘʟᴀᴛᴇ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_red"}]}'
+      enchants:
+        minecraft:mending: 1
+        minecraft:protection: 4
+        minecraft:thorns: 3
+        minecraft:unbreaking: 3
+      trim:
+        material: minecraft:redstone
+        pattern: minecraft:snout
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: NETHERITE_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      display-name: '{"text":"","extra":[{"text":"ᴄʀɪᴍsᴏɴ ʟᴇɢɢɪɴɢs","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_red"}]}'
+      enchants:
+        minecraft:mending: 1
+        minecraft:protection: 4
+        minecraft:swift_sneak: 3
+        minecraft:thorns: 3
+        minecraft:unbreaking: 3
+      trim:
+        material: minecraft:redstone
+        pattern: minecraft:snout
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: NETHERITE_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      display-name: '{"text":"","extra":[{"text":"ᴄʀɪᴍsᴏɴ ʙᴏᴏᴛs","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_red"}]}'
+      enchants:
+        minecraft:depth_strider: 3
+        minecraft:feather_falling: 4
+        minecraft:mending: 1
+        minecraft:protection: 4
+        minecraft:soul_speed: 3
+        minecraft:thorns: 3
+        minecraft:unbreaking: 3
+      trim:
+        material: minecraft:redstone
+        pattern: minecraft:snout
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: NETHERITE_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"ᴄʀɪᴍsᴏɴ sᴡᴏʀᴅ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_red"}]}'
+      enchants:
+        minecraft:fire_aspect: 2
+        minecraft:knockback: 2
+        minecraft:looting: 3
+        minecraft:mending: 1
+        minecraft:sharpness: 5
+        minecraft:unbreaking: 3
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: NETHERITE_PICKAXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"ᴄʀɪᴍsᴏɴ ᴘɪᴄᴋᴀxᴇ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_red"}]}'
+      enchants:
+        minecraft:efficiency: 5
+        minecraft:mending: 1
+        minecraft:silk_touch: 1
+        minecraft:unbreaking: 3
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: NETHERITE_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"ᴄʀɪᴍsᴏɴ ᴀxᴇ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_red"}]}'
+      enchants:
+        minecraft:efficiency: 5
+        minecraft:mending: 1
+        minecraft:sharpness: 5
+        minecraft:silk_touch: 1
+        minecraft:unbreaking: 3

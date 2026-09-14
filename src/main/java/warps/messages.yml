@@ -1,0 +1,34 @@
+# EconomySMPCore Warps Messages
+# Edit any message below and run /warp reload (or /donutreload) to apply.
+# Colour codes use '&'. Placeholders shown in each message's [] comment.
+
+only-player: "&cOnly players can use this command."
+
+no-permission-reload: "&cYou do not have permission to reload warps."
+reload-success: "&aWarps reloaded!"
+
+no-warps: "&7No warps available."
+# [%warps%] = comma-separated list of warp names
+warp-list: "&6Warps: &f%warps%"
+warp-list-usage: "&eUsage: /warp <name>"
+
+# [%warp%] = the warp name that was requested
+warp-not-found: "&cWarp not found."
+already-teleporting: "&cYou are already teleporting!"
+
+# [%time%] = seconds remaining
+teleport-countdown: "&7Teleporting in &d%time%s..."
+# [%warp%] = the warp name teleported to
+teleport-success: "&aTeleported to warp '%warp%'!"
+teleport-cancelled-move: "&cTeleport cancelled because you moved."
+
+no-permission-setwarp: "&cYou do not have permission to set warps."
+setwarp-usage: "&cUsage: /setwarp <name>"
+# [%warp%] = the warp name that was set
+setwarp-success: "&aWarp '%warp%' set at your current location!"
+
+no-permission-delwarp: "&cYou do not have permission to delete warps."
+delwarp-usage: "&cUsage: /delwarp <name>"
+warp-not-exist: "&cWarp does not exist."
+# [%warp%] = the warp name that was deleted
+delwarp-success: "&aWarp '%warp%' deleted!"

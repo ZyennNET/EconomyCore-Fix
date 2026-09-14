@@ -1,0 +1,38 @@
+# Discord webhook URL (create a webhook in your Discord server)
+webhook-url: ""
+
+# Custom webhook name and avatar
+webhook-name: "Report Bot"
+webhook-avatar-url: ""
+
+# Cooldown between reports (seconds)
+cooldown-seconds: 60
+
+# Server name shown in Discord embed footer
+server-name: "My Minecraft Server"
+
+# Preset reasons (players can use number or text)
+preset-reasons:
+  - "spamming"
+  - "inappropriate language"
+  - "cheating/hacking"
+  - "harassment"
+  - "advertising"
+  - "griefing"
+  - "threats"
+  - "nsfw content"
+  - "bypassing filters"
+  - "staff disrespect"
+
+# Messages (colour codes supported)
+messages:
+  prefix: "&7[&cReport&7]&r "
+  no-permission: "&cYou don't have permission to use this command."
+  invalid-usage: "&cUsage: /report <player> <reason>"
+  invalid-reason: "&cInvalid reason. Available reasons: {reasons}"
+  self-report: "&cYou cannot report yourself."
+  cooldown: "&cPlease wait {seconds} seconds before reporting again."
+  webhook-not-configured: "&cReporting is not configured – please contact an admin."
+  report-success: "&aReport submitted. Thank you!"
+  report-failed: "&cFailed to send report – try again later."
+  reload-success: "&aReport config reloaded."

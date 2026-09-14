@@ -1,0 +1,22 @@
+ARGUMENT: "Asia"
+server: "AS_SURVIVAL_TEST"
+ARGUMENT: "Asia"
+worlds:
+  overworld:
+    world: "world"
+    min: 10000
+    max: 50000
+    center_x: 0
+    center_z: 0
+  nether:
+    world: "world_nether"
+    min: 5000
+    max: 20000
+    center_x: 0
+    center_z: 0
+  end:
+    world: "world_the_end"
+    min: 10000
+    max: 50000
+    center_x: 0
+    center_z: 0

@@ -1,0 +1,6 @@
+no-permission: "&cYou have no permission for that!"
+player-only: "&cOnly players can use this command!"
+reloaded: "&aLeaderboards reloaded."
+search-prompt: "&fType a player name in chat, or &ccancel &fto cancel."
+search-cancelled: "&cSearch cancelled!"
+player-not-found: "&cPlayer not found"

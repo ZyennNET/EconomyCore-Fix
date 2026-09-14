@@ -1,0 +1,142 @@
+messages:
+  prefix: ""
+  placed: "&7Stash type #%type% Successfully"
+  no-permission: "&cYou don't have permission."
+  invalid-type: "&cInvalid stash type."
+  unknown-top-block: "&cUnknown top block type. Use 'stone', 'deepslate', or 'air'."
+
+layouts:
+  1:
+    blocks:
+      # Floor (3x4 area of stone)
+      - {x: -1, y: 0, z: 0, material: "STONE"}
+      - {x: 0, y: 0, z: 0, material: "STONE"}
+      - {x: 1, y: 0, z: 0, material: "STONE"}
+      - {x: -1, y: 0, z: 1, material: "STONE"}
+      - {x: 0, y: 0, z: 1, material: "STONE"}
+      - {x: 1, y: 0, z: 1, material: "STONE"}
+      - {x: -1, y: 0, z: 2, material: "STONE"}
+      - {x: 0, y: 0, z: 2, material: "STONE"}
+      - {x: 1, y: 0, z: 2, material: "STONE"}
+      - {x: -1, y: 0, z: 3, material: "STONE"}
+      - {x: 0, y: 0, z: 3, material: "STONE"}
+      - {x: 1, y: 0, z: 3, material: "STONE"}
+      # Spawners (along x=-1)
+      - {x: -1, y: 1, z: 0, material: "SPAWNER", spawner-type: "SKELETON"}
+      - {x: -1, y: 1, z: 1, material: "SPAWNER", spawner-type: "SKELETON"}
+      - {x: -1, y: 1, z: 2, material: "SPAWNER", spawner-type: "SKELETON"}
+      - {x: -1, y: 1, z: 3, material: "SPAWNER", spawner-type: "SKELETON"}
+      # Double chests on top of spawners
+      - {x: -1, y: 2, z: 0, material: "CHEST", double: true}
+      - {x: -1, y: 2, z: 1, material: "CHEST", double: true}
+      - {x: -1, y: 2, z: 2, material: "CHEST", double: true}
+      - {x: -1, y: 2, z: 3, material: "CHEST", double: true}
+      # Ender chest
+      - {x: 1, y: 1, z: 1, material: "ENDER_CHEST"}
+      # Purple shulker on top
+      - {x: 1, y: 2, z: 1, material: "PURPLE_SHULKER_BOX"}
+
+  2:
+    blocks:
+      # Floor (4x1 stone)
+      - {x: 0, y: 0, z: 0, material: "STONE"}
+      - {x: 1, y: 0, z: 0, material: "STONE"}
+      - {x: 2, y: 0, z: 0, material: "STONE"}
+      - {x: 3, y: 0, z: 0, material: "STONE"}
+      # Spawner at x=0
+      - {x: 0, y: 1, z: 0, material: "SPAWNER", spawner-type: "SKELETON"}
+      # Amethyst block at x=1
+      - {x: 1, y: 1, z: 0, material: "AMETHYST_BLOCK"}
+      # Amethyst cluster on top of amethyst block
+      - {x: 1, y: 2, z: 0, material: "AMETHYST_CLUSTER"}
+    spawner-top-block:
+      default: "AIR"
+
+  3:
+    blocks:
+      # === 4x4 HOLE with 4 blocks height (y=0,1,2,3 all AIR) ===
+      # y=0
+      - {x: 0, y: 0, z: 0, material: "AIR"}
+      - {x: 1, y: 0, z: 0, material: "AIR"}
+      - {x: 2, y: 0, z: 0, material: "AIR"}
+      - {x: 3, y: 0, z: 0, material: "AIR"}
+      - {x: 0, y: 0, z: 1, material: "AIR"}
+      - {x: 1, y: 0, z: 1, material: "AIR"}
+      - {x: 2, y: 0, z: 1, material: "AIR"}
+      - {x: 3, y: 0, z: 1, material: "AIR"}
+      - {x: 0, y: 0, z: 2, material: "AIR"}
+      - {x: 1, y: 0, z: 2, material: "AIR"}
+      - {x: 2, y: 0, z: 2, material: "AIR"}
+      - {x: 3, y: 0, z: 2, material: "AIR"}
+      - {x: 0, y: 0, z: 3, material: "AIR"}
+      - {x: 1, y: 0, z: 3, material: "AIR"}
+      - {x: 2, y: 0, z: 3, material: "AIR"}
+      - {x: 3, y: 0, z: 3, material: "AIR"}
+      # y=1
+      - {x: 0, y: 1, z: 0, material: "AIR"}
+      - {x: 1, y: 1, z: 0, material: "AIR"}
+      - {x: 2, y: 1, z: 0, material: "AIR"}
+      - {x: 3, y: 1, z: 0, material: "AIR"}
+      - {x: 0, y: 1, z: 1, material: "AIR"}
+      - {x: 1, y: 1, z: 1, material: "AIR"}
+      - {x: 2, y: 1, z: 1, material: "AIR"}
+      - {x: 3, y: 1, z: 1, material: "AIR"}
+      - {x: 0, y: 1, z: 2, material: "AIR"}
+      - {x: 1, y: 1, z: 2, material: "AIR"}
+      - {x: 2, y: 1, z: 2, material: "AIR"}
+      - {x: 3, y: 1, z: 2, material: "AIR"}
+      - {x: 0, y: 1, z: 3, material: "AIR"}
+      - {x: 1, y: 1, z: 3, material: "AIR"}
+      - {x: 2, y: 1, z: 3, material: "AIR"}
+      - {x: 3, y: 1, z: 3, material: "AIR"}
+      # y=2
+      - {x: 0, y: 2, z: 0, material: "AIR"}
+      - {x: 1, y: 2, z: 0, material: "AIR"}
+      - {x: 2, y: 2, z: 0, material: "AIR"}
+      - {x: 3, y: 2, z: 0, material: "AIR"}
+      - {x: 0, y: 2, z: 1, material: "AIR"}
+      - {x: 1, y: 2, z: 1, material: "AIR"}
+      - {x: 2, y: 2, z: 1, material: "AIR"}
+      - {x: 3, y: 2, z: 1, material: "AIR"}
+      - {x: 0, y: 2, z: 2, material: "AIR"}
+      - {x: 1, y: 2, z: 2, material: "AIR"}
+      - {x: 2, y: 2, z: 2, material: "AIR"}
+      - {x: 3, y: 2, z: 2, material: "AIR"}
+      - {x: 0, y: 2, z: 3, material: "AIR"}
+      - {x: 1, y: 2, z: 3, material: "AIR"}
+      - {x: 2, y: 2, z: 3, material: "AIR"}
+      - {x: 3, y: 2, z: 3, material: "AIR"}
+      # y=3
+      - {x: 0, y: 3, z: 0, material: "AIR"}
+      - {x: 1, y: 3, z: 0, material: "AIR"}
+      - {x: 2, y: 3, z: 0, material: "AIR"}
+      - {x: 3, y: 3, z: 0, material: "AIR"}
+      - {x: 0, y: 3, z: 1, material: "AIR"}
+      - {x: 1, y: 3, z: 1, material: "AIR"}
+      - {x: 2, y: 3, z: 1, material: "AIR"}
+      - {x: 3, y: 3, z: 1, material: "AIR"}
+      - {x: 0, y: 3, z: 2, material: "AIR"}
+      - {x: 1, y: 3, z: 2, material: "AIR"}
+      - {x: 2, y: 3, z: 2, material: "AIR"}
+      - {x: 3, y: 3, z: 2, material: "AIR"}
+      - {x: 0, y: 3, z: 3, material: "AIR"}
+      - {x: 1, y: 3, z: 3, material: "AIR"}
+      - {x: 2, y: 3, z: 3, material: "AIR"}
+      - {x: 3, y: 3, z: 3, material: "AIR"}
+
+      # === Spawners on opposite wall (z=3) at the bottom (y=0) ===
+      - {x: 0, y: 0, z: 3, material: "SPAWNER", spawner-type: "SKELETON"}
+      - {x: 1, y: 0, z: 3, material: "SPAWNER", spawner-type: "SKELETON"}
+      - {x: 2, y: 0, z: 3, material: "SPAWNER", spawner-type: "SKELETON"}
+      - {x: 3, y: 0, z: 3, material: "SPAWNER", spawner-type: "SKELETON"}
+
+      # === Chests above spawners (y=1), facing SOUTH ===
+      - {x: 0, y: 1, z: 3, material: "CHEST", facing: "SOUTH"}
+      - {x: 1, y: 1, z: 3, material: "CHEST", facing: "SOUTH"}
+      - {x: 2, y: 1, z: 3, material: "CHEST", facing: "SOUTH"}
+      - {x: 3, y: 1, z: 3, material: "CHEST", facing: "SOUTH"}
+
+      # === Tower moved INTO THE LEFT WALL (x=-1 instead of 0) ===
+      - {x: -1, y: 2, z: 2, material: "CRAFTING_TABLE"}
+      - {x: -1, y: 3, z: 2, material: "STONE"}
+      - {x: -1, y: 4, z: 2, material: "ENDER_CHEST"}

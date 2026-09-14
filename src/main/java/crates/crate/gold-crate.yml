@@ -1,0 +1,74 @@
+key: gold
+type: NORMAL
+container: CHEST
+contents:
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: SPAWNER
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: '{"text":"","extra":[{"text":"cow Spawner","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false}]}'
+      internal: H4sIAAAAAAAA/0WPXQrCMBCEh/iDDRQV9d0L9AK+qo9K0QPItl1LsE00jbS9ocfSGMR9nP1mmJGAxCyrTH5LWDvl+sRRKRAflD7fqdU7rqjHS2B+oO7IZLN+7znFDcYSUYDIkcQ4BEwgVIG4VppzS1e3yU0LBHX1V2uTXRpvZhth+o1JjfMRVDXwJyC/8ol0yRj6UtT9Sw3WP2Brntp5YHHix1NZLtLPn20wzgRGYcUSeAMO7VyF8AAAAA==
+      PublicBukkitValues: |-
+        {
+            "essentials:convert": "true"
+        }
+      blockMaterial: SPAWNER
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: SPAWNER
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: '{"text":"","extra":[{"text":"spider Spawner","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false}]}'
+      internal: H4sIAAAAAAAA/0WPXQrCMBCEh/iDDYgV9d0LeAFf1Uel1API1q4lWJOapGhv6LE0BnEfd74ZZiQgkRa1OV9XrL3y3cpTJTDeK31s6KG3XFOHl8B0T88Dky26XeAUOwwlkgiRJ4lhDBhBqBLpTWk+W7r4tWtUyRaIwuIv3ExxcsHPNsHkm5QZH1KodggnIL/vnHTF6Ide9Pz36i1/wMa02gdglvO9VZbL7KOzjcZUYBCHzIE33P6hUPMAAAA=
+      PublicBukkitValues: |-
+        {
+            "essentials:convert": "true"
+        }
+      blockMaterial: SPAWNER
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: SPAWNER
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: '{"text":"","extra":[{"text":"skeleton Spawner","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false}]}'
+      internal: H4sIAAAAAAAA/0WPWwrCMBBFL/GBDYjvfzfQDfirflZEFyDTdiyhbaJpinaHLktjEOdz7pnDHQlITNPKZGXM2inXxY4KgXGi9PlGD73jijq8BGYJPQ9MNu32nlPcYCgRBYgcSQyDYAShcsxrpTmzdHWbpuSKndFAiFb/qDbppfEGthEmX9fROO+hqoEfAfldn0gXjL5vRs9/s976B2xNq50HFie+t8pyfvzkbMPhVGAQXlkCbygZcij1AAAA
+      PublicBukkitValues: |-
+        {
+            "essentials:convert": "true"
+        }
+      blockMaterial: SPAWNER
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: SPAWNER
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: '{"text":"","extra":[{"text":"blaze Spawner","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false}]}'
+      internal: H4sIAAAAAAAA/0WPXQ6CMBCEJ/Un0sSgUd+9ABfwVX3EGD2AWWQljVC0lAie0GNpaQz7OPvNZEYCErMkL6/3iLVVto0sZQLTWOnzg156xzm1+AjMY2oOTCZp945TXGEsEXiILEmMfcAEQqUIC6X5auhmN0lObwa8vur1okwulbOzCRB2QcfSuhDKK7gTkJ18Ip0xhq4WNX2twfoPbMtaWwcsTvysleH0+Puz8caZwMjvWAJffpybTvIAAAA=
+      PublicBukkitValues: |-
+        {
+            "essentials:convert": "true"
+        }
+      blockMaterial: SPAWNER
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: SPAWNER
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: '{"text":"","extra":[{"text":"creeper Spawner","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false}]}'
+      internal: H4sIAAAAAAAA/0WPTQ6CMBCFX+pPpIkRou69ABdwqy4xBg9gBhhJIxQtJcoNPZaWxjjLed98eSMBiTCrmvwWs7bK9rGlUmCeKH2+01PvuaIeb4EoodeRyWT9wXGKW0wlAg+RJYmpF8wgVIGoVppzQ1e7zQ3znQ3gk/U/qZvs0joBmwCLQXVqrNNQ1cKNgBzWKemSMXbF6PUvNtr8gF3TaeuAZcqPThkuTt+cjT8MBSb+kxXwAe2SbYf0AAAA
+      PublicBukkitValues: |-
+        {
+            "essentials:convert": "true"
+        }
+      blockMaterial: SPAWNER

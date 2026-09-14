@@ -1,0 +1,4 @@
+messages:
+  console: "&cThis command can only be used by players."
+  activated: "&aNight vision enabled."
+  deactivated: "&cNight vision disabled."

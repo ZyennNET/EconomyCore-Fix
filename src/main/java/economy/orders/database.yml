@@ -1,0 +1,11 @@
+storage:
+  type: yaml   # options: yaml, sqlite, mysql
+  sqlite:
+    file: orders/orders.db
+  mysql:
+    host: localhost
+    port: 3306
+    database: primesurvival
+    username: root
+    password: ""
+    useSSL: false

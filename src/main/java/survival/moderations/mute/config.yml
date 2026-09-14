@@ -1,0 +1,42 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  Mute System Configuration
+#  Location: plugins/DonutCore/survival/moderations/mute/config.yml
+#  Muted players are stored at:  survival/moderations/mute/data.yml
+#  IP tracking is stored at:     survival/moderations/mute/ips.yml
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Commands blocked for chat-muted players in addition to chatting
+blocked-commands:
+  - "/msg"
+  - "/tell"
+  - "/w"
+  - "/r"
+  - "/reply"
+  - "/whisper"
+  - "/pm"
+  - "/me"
+
+messages:
+  # Shown to the muted player when they try to chat or use a blocked command
+  # %duration% = time remaining, %reason% = mute reason
+  muted-chat: "&7You are muted for &f%duration%&7. Reason:&c %reason%"
+
+  # Shown to the admin who ran /mute
+  # %player% = target name, %type% = chat/voice, %duration% = duration string, %reason% = reason
+  admin-mute: "&7You muted &d%player%&7's %type% for &f%duration%&7. Reason:&c %reason%"
+
+  # Shown to the admin who ran /unmute
+  # %player% = target name, %type% = "voice " or "" (empty for chat)
+  admin-unmute: "&d%player%&7 has been %type%unmuted."
+
+  # Shown to the player when they are unmuted
+  target-unmute: "&7You have been %type%unmuted."
+
+  # Shown when trying to mute someone already muted
+  already-muted: "&cThat player is already %type%muted."
+
+  # Shown when trying to unmute someone who is not muted
+  not-muted: "&c%player% is not %type%muted."
+
+  # Action bar message shown in Simple Voice Chat when the player tries to speak while voice-muted
+  voice-muted-action: "&cYou are voice muted and cannot speak!"

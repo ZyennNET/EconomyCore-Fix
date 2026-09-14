@@ -1,0 +1,8 @@
+# EconomySMPCore Warps Settings
+# Run /warp reload (or /donutreload) after editing.
+
+# How many seconds the /warp teleport countdown lasts.
+teleport-countdown-seconds: 5
+
+# If true, moving during the countdown cancels the teleport (like /tpa).
+cancel-on-move: true

@@ -1,0 +1,7 @@
+# economy/worth/config.yml
+BLOCK-ITEMS:
+  - SPAWNER
+  - COMMAND_BLOCK
+  - BARRIER
+  - BEDROCK
+  - DRAGON_EGG
